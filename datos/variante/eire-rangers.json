@@ -1,0 +1,26 @@
+{
+  "_info": "Rangers de Éire. Variante de Nueva Antioquía. Fuente: Warbands 1.0.2, pp. 37-38.",
+  "id": "eire-rangers", "base": "new-antioch", "en": "Éire Rangers",
+  "reglas": ["anointed-ammunition", "berserker", "carnyx", "fianna", "followers-of-saint-patrick", "hit-and-run", "light-infantry", "loose-formation", "strong-in-faith"],
+  "armeria": {
+    "mas": [{"obj": "armour-piercing-bullets", "d": 5, "lim": 2, "estip": ["CONSUMABLE"]}],
+    "cambios": {"satchel-charge": {"lim": 4}}
+  },
+  "unidades": {
+    "lieutenant": {"kwMas": ["SKIRMISHER"], "habMenos": ["hold-your-fire"], "habMas": ["loose-formation"],
+      "opcMas": [{"id": "berserker", "tipo": "check", "d": 15, "maxBanda": 1, "efecto": {"kw": ["NEGATE FEAR"], "prohibeCategorias": ["armour"]}}]},
+    "shock-trooper": {"opcMas": [
+      {"id": "fianna", "tipo": "check", "d": 10, "efecto": {"kw": ["INFILTRATOR", "SKIRMISHER"]}},
+      {"id": "berserker", "tipo": "check", "d": 15, "maxBanda": 1, "requiere": ["opc:fianna"], "efecto": {"kw": ["NEGATE FEAR"], "prohibeCategorias": ["armour"]}}
+    ]},
+    "mechanized-heavy-infantry": {"max": 1},
+    "combat-engineer": {"max": 4},
+    "trench-cleric": {"max": 2, "habMenos": ["onward-christian-soldiers"], "habMas": ["arise-and-be-healed", "away-serpents"]}
+  },
+  "reglasEquipo": [
+    {"tipo": "max-modelos", "objs": ["great-sword"], "max": 3},
+    {"tipo": "prohibido", "unidades": ["mechanized-heavy-infantry"], "objs": ["great-sword"]},
+    {"tipo": "kw-solo-unidades", "kw": "HEAVY", "cats": ["ranged", "melee"], "unidades": ["mechanized-heavy-infantry"], "excepto": ["great-sword"]},
+    {"tipo": "solo-unidades", "objs": ["reinforced-armour", "machine-armour"], "unidades": ["mechanized-heavy-infantry"]}
+  ]
+}

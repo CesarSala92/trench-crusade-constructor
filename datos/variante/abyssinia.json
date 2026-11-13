@@ -1,0 +1,36 @@
+{
+  "_info": "Fuerzas Expedicionarias de Abisinia. Variante de Nueva Antioquía. Fuente: Warbands 1.0.2, pp. 43-46.",
+  "id": "abyssinia", "base": "new-antioch", "en": "Expeditionary Forces of Abyssinia",
+  "reglas": ["abyssinian-healers", "chieftain-panoply", "faith-of-ethiopia", "holy-warriors", "short-range-marksmanship", "vanguard-forces", "warrior-nobles", "weapons-of-mobile-warfare"],
+  "objetosPropios": [
+    {"id": "shotel", "en": "Shotel", "cat": "melee", "manos": 1, "alcance": "Melee", "kw": ["CRITICAL"], "regla": "bypass-shield"},
+    {"id": "holy-water-of-lalibela", "en": "Holy Water of Lalibela", "cat": "equipment", "kw": ["CONSUMABLE"], "regla": "healing-waters"},
+    {"id": "anfarro", "en": "Anfarro (Warriors Crown)", "cat": "equipment", "kw": ["NEGATE FEAR"], "cabeza": true, "statMas": {"cac": 1}, "regla": "token-of-honour"},
+    {"id": "tabot", "en": "Tabot", "cat": "equipment", "kw": [], "regla": "virtuous-rewards"}
+  ],
+  "armeria": {
+    "mas": [
+      {"obj": "shotel", "d": 5, "solo": ["opc:chewa", "ELITE"]},
+      {"obj": "holy-water-of-lalibela", "d": 3, "lim": 5, "estip": ["CONSUMABLE"]},
+      {"obj": "anfarro", "d": 10, "lim": 6, "solo": ["opc:chewa", "ELITE"], "estip": ["HEADGEAR"]},
+      {"obj": "tabot", "g": 4, "lim": 1, "solo": ["unit:holy-warrior"]}
+    ],
+    "cambios": {"misericordia": {"lim": 2}}
+  },
+  "unidades": {
+    "sniper-priest": {"quitar": true},
+    "combat-medic": {"max": 2},
+    "mechanized-heavy-infantry": {"perfilesMenos": ["machine"]},
+    "yeoman": {"opcMenos": ["trench-mole"], "habMenos": ["trench-moles"], "habMas": ["short-range-marksmanship"],
+      "opcMas": [{"id": "flanking", "tipo": "check", "d": 5, "maxBanda": 4}]},
+    "lieutenant": {"habMas": ["short-range-marksmanship"], "opcMas": [{"id": "chewa", "tipo": "check", "d": 5}]},
+    "shock-trooper": {"opcMas": [{"id": "chewa", "tipo": "check", "d": 5}]},
+    "trench-cleric": {"opcMas": [{"id": "chewa", "tipo": "check", "d": 5}]}
+  },
+  "unidadesNuevas": [
+    {"id": "holy-warrior", "copiaDe": "trench-cleric", "en": "Holy Warrior", "max": 2, "habMas": ["blessed-psalm", "arise-and-be-healed"]}
+  ],
+  "reglasEquipo": [
+    {"tipo": "max-kw", "kw": "HEAVY", "cats": ["ranged"], "max": 3, "excepto": ["satchel-charge"]}
+  ]
+}

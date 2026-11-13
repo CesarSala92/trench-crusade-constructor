@@ -1,0 +1,160 @@
+{
+  "_info": "Culto del Grial Negro. Fuente: Warbands of Trench Crusade 1.0.2, pp. 125-140. Textos en castellano en es.json.",
+  "id": "black-grail",
+  "en": "The Cult of the Black Grail",
+  "alineacion": "fallen",
+  "presupuesto": 700,
+  "reglas": ["infection-markers", "black-grail-morale"],
+
+  "objetosPropios": [
+    {"id": "corruption-belcher", "en": "Corruption Belcher", "cat": "ranged", "manos": 2, "alcance": "8\"", "kw": ["FLAMETHROWER", "GAS", "IGNORE ARMOUR"]},
+    {"id": "infested-rifle", "en": "Infested Rifle", "cat": "ranged", "manos": 2, "alcance": "18\"", "kw": ["ARMOUR PIERCING"]},
+    {"id": "putrid-shotgun", "en": "Putrid Shotgun", "cat": "ranged", "manos": 2, "alcance": "12\"", "kw": ["+1 DICE", "ASSAULT", "INFECTION MARKERS", "SHOTGUN"]},
+    {"id": "viscera-cannon", "en": "Viscera Cannon", "cat": "ranged", "manos": 2, "alcance": "24\"", "kw": ["+2 DICE", "HEAVY"], "regla": "self-sacrifice"},
+    {"id": "beelzebubs-axe", "en": "Beelzebub's Axe", "cat": "melee", "manos": 2, "alcance": "Melee", "kw": ["+2 INJURY DICE", "HEAVY", "INFECTION MARKERS"]},
+    {"id": "plague-blade", "en": "Plague Blade", "cat": "melee", "manos": 1, "alcance": "Melee", "kw": ["INFECTION MARKERS"]},
+    {"id": "parasite-grenades", "en": "Parasite Grenades", "cat": "grenade", "alcance": "8\"", "kw": ["ASSAULT", "IGNORE COVER", "IGNORE LONG RANGE"], "regla": "terrifying-hallucinations"},
+    {"id": "black-grail-shield", "en": "Black Grail Shield", "cat": "shield", "kw": ["-1 INJURY MODIFIER"], "regla": "power-of-the-cult"},
+    {"id": "compound-eyes-helmet", "en": "Compound Eyes Helmet", "cat": "equipment", "kw": ["NEGATE SHRAPNEL"], "cabeza": true, "regla": "enhanced-vision"},
+    {"id": "grail-devotee", "en": "Grail Devotee", "cat": "equipment", "kw": [], "especial": "grail-devotee", "regla": "grovelling-followers"},
+
+    {"id": "crushing-blows", "en": "Crushing Blows", "cat": "natural", "alcance": "Melee", "kw": ["CLEAVE 2", "UNARMED"]},
+    {"id": "overwhelming-horde", "en": "Overwhelming Horde", "cat": "natural", "alcance": "Melee", "kw": ["UNARMED"]},
+    {"id": "teeth-and-claws", "en": "Teeth & Claws", "cat": "natural", "alcance": "Melee", "kw": ["UNARMED"]},
+    {"id": "infected-proboscis", "en": "Infected Proboscis", "cat": "natural", "alcance": "Melee", "kw": ["INFECTION MARKERS", "UNARMED"]},
+    {"id": "trample", "en": "Trample", "cat": "natural", "alcance": "Melee", "kw": ["IGNORE ARMOUR", "UNARMED"]}
+  ],
+
+  "_armeria": "Cada entrada: obj (id del objeto), d (ducados) o g (gloria), lim (límite en la banda), solo (lista de condiciones OR: palabra clave del modelo o 'unit:<id>'), estip (SHIELD_COMBO, BAYONET_LUG, HEADGEAR, CONSUMABLE).",
+  "armeria": [
+    {"obj": "blunderbuss", "d": 5, "estip": ["SHIELD_COMBO"]},
+    {"obj": "bolt-action-rifle", "d": 10, "estip": ["BAYONET_LUG"]},
+    {"obj": "corruption-belcher", "d": 30, "lim": 2},
+    {"obj": "infested-rifle", "d": 15, "estip": ["BAYONET_LUG"]},
+    {"obj": "machine-gun", "d": 50, "lim": 1, "solo": ["unit:amalgam"]},
+    {"obj": "musket", "d": 5, "estip": ["BAYONET_LUG"]},
+    {"obj": "pistol", "d": 6},
+    {"obj": "putrid-shotgun", "d": 20, "lim": 2, "estip": ["BAYONET_LUG", "SHIELD_COMBO"]},
+    {"obj": "shotgun", "d": 10, "estip": ["BAYONET_LUG", "SHIELD_COMBO"]},
+    {"obj": "viscera-cannon", "d": 50, "lim": 2, "solo": ["ELITE"]},
+
+    {"obj": "bayonet", "d": 2, "estip": ["SHIELD_COMBO"]},
+    {"obj": "beelzebubs-axe", "d": 30, "lim": 1, "solo": ["ELITE"]},
+    {"obj": "great-hammer", "d": 10},
+    {"obj": "great-sword", "d": 12},
+    {"obj": "plague-blade", "d": 7, "lim": 3, "solo": ["ELITE"]},
+    {"obj": "polearm", "d": 7, "estip": ["SHIELD_COMBO"]},
+    {"obj": "sword-axe", "d": 4},
+    {"obj": "trench-club", "d": 3},
+    {"obj": "trench-knife", "d": 1},
+
+    {"obj": "gas-grenades", "d": 10},
+    {"obj": "parasite-grenades", "d": 15},
+
+    {"obj": "black-grail-shield", "d": 20, "solo": ["ELITE"], "estip": ["SHIELD_COMBO"]},
+    {"obj": "trench-shield", "d": 10, "estip": ["SHIELD_COMBO"]},
+
+    {"obj": "reinforced-armour", "d": 40, "solo": ["ELITE"]},
+    {"obj": "standard-armour", "d": 15},
+
+    {"obj": "combat-helmet", "d": 5, "estip": ["HEADGEAR"]},
+    {"obj": "compound-eyes-helmet", "d": 10, "lim": 3, "solo": ["ELITE", "unit:herald-of-beelzebub"], "estip": ["HEADGEAR"]},
+    {"obj": "grail-devotee", "d": 15, "lim": 2, "solo": ["ELITE"], "_nota": "El límite es de modelos; cada modelo hasta 2; el segundo cuesta 2 de gloria (regla especial grail-devotee)."},
+    {"obj": "field-shrine", "g": 2},
+    {"obj": "musical-instrument", "d": 15, "lim": 1},
+    {"obj": "troop-flag", "g": 1, "lim": 1},
+    {"obj": "unholy-trinket", "d": 15, "estip": ["CONSUMABLE"]}
+  ],
+
+  "listas": {
+    "rotten-cross": {
+      "_info": "Armas que puede comprar un Caballero de la Cruz Podrida, de las armerías de Nueva Antioquía y Legiones Herejes.",
+      "opciones": [
+        {"obj": "automatic-pistol", "d": 20, "origen": "new-antioch"},
+        {"obj": "automatic-rifle", "d": 40, "origen": "new-antioch"},
+        {"obj": "automatic-shotgun", "d": 15, "estip": ["SHIELD_COMBO"]},
+        {"obj": "flamethrower", "d": 30},
+        {"obj": "grenade-launcher", "d": 30},
+        {"obj": "heavy-flamethrower", "d": 55},
+        {"obj": "heavy-shotgun", "d": 20, "estip": ["SHIELD_COMBO"], "origen": "new-antioch"},
+        {"obj": "machine-gun", "d": 50},
+        {"obj": "semi-automatic-rifle", "d": 15},
+        {"obj": "sniper-rifle", "d": 35, "origen": "new-antioch"},
+        {"obj": "submachine-gun", "d": 30, "estip": ["SHIELD_COMBO"], "origen": "new-antioch"},
+        {"obj": "silenced-pistol", "d": 15, "origen": "heretic-legions"},
+        {"obj": "hellblade", "g": 1, "origen": "heretic-legions"}
+      ]
+    }
+  },
+
+  "_unidades": "perfil: mov (pulgadas), tipoMov, dis/cac (dados; null = no tiene), arm, base. kit: armeria | nada | soloCategorias/soloObjetos | requiere | especial. naturales: ataques sin arma. defecto: equipo que se añade al reclutar (se puede quitar). fijo: equipo incluido que no se quita.",
+  "unidades": [
+    {"id": "lord-of-tumours", "en": "Lord of Tumours", "d": 130, "max": 1, "elite": true,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 1, "cac": 4, "arm": 0, "base": "50mm"},
+     "kw": ["BLACK GRAIL", "ELITE", "FEAR", "LEADER", "NEGATE GAS", "STRONG", "TOUGH"],
+     "kit": {"armeria": true}, "naturales": ["crushing-blows"],
+     "habilidades": ["beelzebubs-touch", "crushing-blows", "undead-fortitude"]},
+
+    {"id": "plague-knight", "en": "Plague Knight", "d": 60, "max": 3, "elite": true,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 0, "cac": 2, "arm": 0, "base": "32mm"},
+     "kw": ["BLACK GRAIL", "ELITE", "FEAR", "NEGATE GAS", "STRONG"],
+     "kit": {"armeria": true, "requiere": ["armour"]}, "defecto": ["standard-armour"],
+     "habilidades": ["undead-fortitude", "plague-knight-ranks", "must-have-armour"],
+     "opciones": [
+       {"id": "plague-knight-rank", "tipo": "select", "opciones": [
+         {"id": "plague-almoner", "d": 10},
+         {"id": "knight-companion-of-the-fly", "d": 5, "eleccion": {"tipo": "stat", "valores": ["dis", "cac"], "suma": 1}},
+         {"id": "knight-of-the-rotten-cross", "d": 5, "maxBanda": 1, "eleccion": {"tipo": "objeto", "lista": "rotten-cross"}}
+       ]}
+     ]},
+
+    {"id": "corpse-guard", "en": "Corpse Guard", "d": 55, "max": 3, "elite": true,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 0, "cac": 1, "arm": 0, "base": "32mm"},
+     "kw": ["BLACK GRAIL", "ELITE", "FEAR", "NEGATE GAS"],
+     "kit": {"armeria": true},
+     "habilidades": ["bodyguard", "parasite-host", "undead-fortitude"]},
+
+    {"id": "grail-thrall", "en": "Grail Thrall / Fly Thrall", "d": 25, "max": null,
+     "perfiles": {
+       "grail-thrall": {"en": "Grail Thrall", "perfil": {"mov": 5, "tipoMov": "Infantry", "dis": null, "cac": -1, "arm": 0, "base": "25mm"},
+                        "kw": ["BLACK GRAIL", "FEAR", "NEGATE GAS"], "habilidades": ["overwhelming-horde", "undead-fortitude-thrall", "no-battlekit"]},
+       "fly-thrall": {"en": "Fly Thrall", "perfil": {"mov": 6, "tipoMov": "Flying", "dis": null, "cac": -1, "arm": 0, "base": "25mm"},
+                      "kw": ["BLACK GRAIL", "FEAR", "FLYING", "NEGATE GAS"], "habilidades": ["overwhelming-horde", "no-battlekit"]}
+     },
+     "kit": {"nada": true}, "naturales": ["overwhelming-horde"]},
+
+    {"id": "hound-of-the-black-grail", "en": "Hound of the Black Grail", "d": 55, "max": 3,
+     "perfil": {"mov": 8, "tipoMov": "Infantry", "dis": null, "cac": 1, "arm": 0, "base": "30x60mm"},
+     "kw": ["BLACK GRAIL", "FEAR", "NEGATE GAS"],
+     "kit": {"nada": true}, "naturales": ["teeth-and-claws"],
+     "habilidades": ["disease-carrier", "frightening-speed", "teeth-and-claws", "undead-fortitude"],
+     "opciones": [
+       {"id": "infested-carcasses", "tipo": "check", "d": 5, "efecto": {"kwNaturales": ["INFECTION MARKERS"]}}
+     ]},
+
+    {"id": "herald-of-beelzebub", "en": "Herald of Beelzebub", "d": 50, "max": 4,
+     "perfil": {"mov": 10, "tipoMov": "Flying", "dis": 0, "cac": 0, "arm": 0, "base": "40mm"},
+     "kw": ["BLACK GRAIL", "FEAR", "FLYING", "NEGATE GAS", "SKIRMISHER"],
+     "kit": {"soloCategorias": ["ranged"], "soloObjetos": ["compound-eyes-helmet"]}, "naturales": ["infected-proboscis"],
+     "habilidades": ["infected-proboscis", "herald-battlekit"],
+     "opciones": [
+       {"id": "maddening-buzzing", "tipo": "check", "d": 10, "maxBanda": 1}
+     ]},
+
+    {"id": "amalgam", "en": "Amalgam", "d": 140, "max": 1,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 0, "cac": 0, "arm": 0, "base": "60mm"},
+     "kw": ["BLACK GRAIL", "FEAR", "NEGATE GAS", "STRONG", "TOUGH"],
+     "kit": {"soloCategorias": ["ranged", "melee"], "soloObjetos": ["trench-shield"], "especial": "six-arms"}, "naturales": ["trample"],
+     "habilidades": ["six-armed-monstrosity", "corpulent", "trample", "unstoppable"]}
+  ],
+
+  "_restricciones": "Reglas de composición de la banda. una-de: se debe cumplir al menos uno de los casos; cada caso da [mínimo, máximo] por unidad.",
+  "restricciones": [
+    {"id": "black-grail-leader", "tipo": "una-de", "casos": [
+      {"lord-of-tumours": [1, 1], "plague-knight": [0, 2]},
+      {"lord-of-tumours": [0, 0], "plague-knight": [1, 3]}
+    ]}
+  ],
+
+  "mercenarios": "por-alineacion"
+}

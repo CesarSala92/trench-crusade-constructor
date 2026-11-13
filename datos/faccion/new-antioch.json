@@ -1,0 +1,121 @@
+{
+  "_info": "Principado de Nueva Antioquía. Fuente: Warbands of Trench Crusade 1.0.2, pp. 23-34. Textos en castellano en es.json.",
+  "id": "new-antioch",
+  "en": "The Principality of New Antioch",
+  "alineacion": "faithful",
+  "presupuesto": 700,
+  "reglas": ["new-antioch-fireteams"],
+  "equiposDeFuego": {"max": 2, "miembros": 2},
+
+  "objetosPropios": [
+    {"id": "engineer-body-armour", "en": "Engineer Body Armour", "cat": "armour", "kw": ["-2 INJURY MODIFIER", "NEGATE SHRAPNEL"], "regla": "ballistic-box-armour"},
+    {"id": "heavy-ballistic-shield", "en": "Heavy Ballistic Shield", "cat": "shield", "kw": ["COVER"]},
+    {"id": "machine-armour", "en": "Machine Armour", "cat": "armour", "kw": ["-3 INJURY MODIFIER"], "regla": "bulky-standfast", "incompatibles": ["trench-shield"], "base": "40mm"}
+  ],
+
+  "armeria": [
+    {"obj": "automatic-pistol", "d": 20, "lim": 3, "solo": ["ELITE"]},
+    {"obj": "automatic-rifle", "d": 40, "lim": 1, "estip": ["BAYONET_LUG"]},
+    {"obj": "automatic-shotgun", "d": 15, "lim": 2, "estip": ["BAYONET_LUG", "SHIELD_COMBO"]},
+    {"obj": "bolt-action-rifle", "d": 10, "estip": ["BAYONET_LUG"]},
+    {"obj": "flamethrower", "d": 30, "lim": 3},
+    {"obj": "grenade-launcher", "d": 30, "lim": 2},
+    {"obj": "heavy-flamethrower", "d": 55, "lim": 1},
+    {"obj": "heavy-shotgun", "d": 20, "lim": 2, "estip": ["SHIELD_COMBO"]},
+    {"obj": "machine-gun", "d": 50, "lim": 2},
+    {"obj": "pistol", "d": 6},
+    {"obj": "semi-automatic-rifle", "d": 15, "estip": ["BAYONET_LUG"]},
+    {"obj": "shotgun", "d": 10, "estip": ["BAYONET_LUG", "SHIELD_COMBO"]},
+    {"obj": "sniper-rifle", "d": 35, "lim": 3},
+    {"obj": "submachine-gun", "d": 30, "lim": 2, "estip": ["BAYONET_LUG", "SHIELD_COMBO"]},
+
+    {"obj": "bayonet", "d": 2, "estip": ["SHIELD_COMBO"]},
+    {"obj": "great-hammer", "d": 10},
+    {"obj": "great-sword", "d": 12},
+    {"obj": "misericordia", "d": 15, "lim": 1, "solo": ["unit:combat-medic"]},
+    {"obj": "polearm", "d": 7, "estip": ["SHIELD_COMBO"]},
+    {"obj": "sword-axe", "d": 4},
+    {"obj": "trench-club", "d": 3},
+    {"obj": "trench-knife", "d": 1},
+
+    {"obj": "frag-grenades", "d": 7},
+    {"obj": "incendiary-grenades", "d": 15, "lim": 2},
+    {"obj": "satchel-charge", "d": 15, "lim": 3, "estip": ["CONSUMABLE"]},
+
+    {"obj": "heavy-ballistic-shield", "d": 15, "solo": ["obj:machine-armour"], "estip": ["SHIELD_COMBO"]},
+    {"obj": "trench-shield", "d": 10, "estip": ["SHIELD_COMBO"]},
+
+    {"obj": "machine-armour", "d": 50, "lim": 1, "limExcluye": ["unit:mechanized-heavy-infantry"], "solo": ["ELITE", "unit:mechanized-heavy-infantry"]},
+    {"obj": "reinforced-armour", "d": 40, "solo": ["ELITE", "unit:mechanized-heavy-infantry"]},
+    {"obj": "standard-armour", "d": 15},
+
+    {"obj": "binoculars", "d": 10, "solo": ["ELITE"]},
+    {"obj": "combat-helmet", "d": 5, "estip": ["HEADGEAR"]},
+    {"obj": "field-shrine", "g": 2},
+    {"obj": "gas-mask", "d": 5},
+    {"obj": "martyrdom-pills", "g": 1, "lim": 2, "solo": ["ELITE"], "estip": ["CONSUMABLE"]},
+    {"obj": "medi-kit", "d": 5},
+    {"obj": "mountaineer-kit", "d": 3, "lim": 4},
+    {"obj": "musical-instrument", "d": 15, "lim": 1},
+    {"obj": "shovel", "d": 5},
+    {"obj": "troop-flag", "g": 1}
+  ],
+
+  "unidades": [
+    {"id": "lieutenant", "en": "Lieutenant", "d": 70, "max": 1,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 2, "cac": 2, "arm": 0, "base": "32mm"},
+     "kw": ["NEW ANTIOCH", "ELITE", "LEADER", "TOUGH"], "kit": {"armeria": true},
+     "habilidades": ["hold-your-fire"]},
+
+    {"id": "sniper-priest", "en": "Sniper Priest", "d": 50, "max": 2,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 2, "cac": -1, "arm": 0, "base": "25mm"},
+     "kw": ["NEW ANTIOCH", "ELITE"], "kit": {"armeria": true},
+     "habilidades": ["absolute-faith", "aim"]},
+
+    {"id": "trench-cleric", "en": "Trench Cleric", "d": 60, "max": 1,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 1, "cac": 1, "arm": 0, "base": "32mm"},
+     "kw": ["NEW ANTIOCH", "ELITE", "NEGATE FEAR"], "kit": {"armeria": true},
+     "habilidades": ["god-is-with-us", "onward-christian-soldiers"]},
+
+    {"id": "yeoman", "en": "Yeoman", "d": 30, "max": null,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 0, "cac": 0, "arm": 0, "base": "25mm"},
+     "kw": ["NEW ANTIOCH"], "kit": {"armeria": true},
+     "precios": {"bolt-action-rifle": 5},
+     "habilidades": ["yeoman-rifle", "trench-moles"],
+     "opciones": [
+       {"id": "trench-mole", "tipo": "check", "d": 10, "maxBanda": 2, "especial": "trench-mole", "efecto": {"kw": ["INFILTRATOR"], "nombre": "trench-mole"}}
+     ]},
+
+    {"id": "shock-trooper", "en": "Shock Trooper", "d": 45, "max": 5,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 0, "cac": 1, "arm": 0, "base": "25mm"},
+     "kw": ["NEW ANTIOCH"], "kit": {"armeria": true},
+     "habilidades": ["assault-drill", "shock-charge"]},
+
+    {"id": "combat-engineer", "en": "Combat Engineer", "d": 80, "max": 2, "armaduraIncluida": true,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 0, "cac": 1, "arm": -2, "base": "25mm"},
+     "kw": ["NEW ANTIOCH", "NEGATE MINED"], "kit": {"armeria": true, "excluyeCategorias": ["armour"]},
+     "fijo": ["engineer-body-armour", "shovel"],
+     "habilidades": ["fixed-kit", "battlefield-demolition", "set-mine", "defuse-mine", "fortify"]},
+
+    {"id": "mechanized-heavy-infantry", "en": "Mechanized Heavy Infantry", "d": 85, "max": 3, "armaduraIncluida": true,
+     "perfiles": {
+       "reinforced": {"en": "Mechanized Heavy Infantry (Reinforced Armour)", "d": 85, "fijo": ["reinforced-armour"],
+                      "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 1, "cac": 0, "arm": -2, "base": "40mm"}},
+       "machine": {"en": "Mechanized Heavy Infantry (Machine Armour)", "d": 95, "fijo": ["machine-armour"],
+                   "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 1, "cac": 0, "arm": -3, "base": "40mm"}}
+     },
+     "kw": ["NEW ANTIOCH", "STRONG"], "kit": {"armeria": true, "excluyeCategorias": ["armour"]},
+     "habilidades": ["fixed-armour"]},
+
+    {"id": "combat-medic", "en": "Combat Medic", "d": 65, "max": 1, "armaduraIncluida": true,
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": 0, "cac": 0, "arm": -1, "base": "25mm"},
+     "kw": ["NEW ANTIOCH", "NEGATE FEAR"], "kit": {"armeria": true, "excluyeCategorias": ["armour"]},
+     "fijo": ["standard-armour", "gas-mask", "medi-kit", "misericordia"],
+     "habilidades": ["fixed-kit", "expert-medic", "finish-the-fallen"]}
+  ],
+
+  "restricciones": [
+    {"id": "new-antioch-leader", "tipo": "una-de", "casos": [{"lieutenant": [1, 1]}]}
+  ],
+  "mercenarios": "por-alineacion"
+}

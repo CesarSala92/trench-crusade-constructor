@@ -1,0 +1,28 @@
+{
+  "_info": "Destacamento de Asalto del Reino de Alba. Variante de Nueva Antioquía. Fuente: Warbands 1.0.2, pp. 39-40.",
+  "id": "kingdom-of-alba", "base": "new-antioch", "en": "Kingdom of Alba Assault Detachment",
+  "reglas": ["bagpipes", "brave", "celtic-machine-armour", "claymore-smiths", "cold-steel", "dum-dum-ammunition", "highland-strength", "lightly-armoured", "melee-focused", "rampant-charge", "strained-supply"],
+  "especiales": ["cold-steel"],
+  "objetosPropios": [
+    {"id": "lochaber-axe", "en": "Lochaber Axe", "cat": "melee", "manos": 2, "alcance": "Melee", "kw": ["+2 INJURY DICE", "BLOCK", "CRITICAL", "CUMBERSOME", "HEAVY"]}
+  ],
+  "armeria": {
+    "mas": [
+      {"obj": "lochaber-axe", "d": 20},
+      {"obj": "dum-dum-bullets", "d": 5, "lim": 3, "estip": ["CONSUMABLE"]}
+    ],
+    "cambios": {
+      "great-sword": {"d": 7},
+      "automatic-shotgun": {"lim": 1}, "grenade-launcher": {"lim": 1}, "machine-gun": {"lim": 1},
+      "sniper-rifle": {"lim": 1}, "submachine-gun": {"lim": 1}
+    }
+  },
+  "unidades": {
+    "lieutenant": {"kwMas": ["STRONG"]},
+    "shock-trooper": {"kwMas": ["STRONG"]},
+    "mechanized-heavy-infantry": {"stats": {"cac": 1, "dis": 0}}
+  },
+  "reglasEquipo": [
+    {"tipo": "solo-unidades", "objs": ["reinforced-armour", "machine-armour"], "unidades": ["lieutenant", "mechanized-heavy-infantry"]}
+  ]
+}

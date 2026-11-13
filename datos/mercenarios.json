@@ -1,0 +1,20 @@
+{
+  "_info": "Mercenarios. Se pagan con gloria. contratable: alineaciones (faithful/fallen), facciones concretas, o 'cualquiera'. De momento solo están los que puede contratar el Grial Negro.",
+  "unidades": [
+    {"id": "sin-eater", "en": "Sin Eater", "g": 6, "max": 1, "merc": true, "armaduraIncluida": true,
+     "contratable": {"alineacion": ["fallen"]},
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": null, "cac": 2, "arm": -2, "base": "50mm"},
+     "kw": ["DEMONIC", "FEAR", "STRONG", "TOUGH"],
+     "kit": {"nada": true}, "fijo": ["reinforced-armour", "combat-helmet", "tenderiser-maul"],
+     "habilidades": ["devour-the-guilty", "mercenary"]},
+    {"id": "scripture-guardian", "en": "Scripture Guardian", "g": 7, "max": 1, "merc": true, "armaduraIncluida": true,
+     "contratable": "cualquiera",
+     "perfil": {"mov": 6, "tipoMov": "Infantry", "dis": null, "cac": 1, "arm": -2, "base": "40mm"},
+     "kw": ["GOLEM"],
+     "kit": {"soloCategorias": ["melee"], "especial": "mandatory-melee"}, "fijo": ["reinforced-armour", "combat-helmet"],
+     "habilidades": ["slow", "vengeful-scripture", "mandatory-melee", "mercenary"]}
+  ],
+  "objetosPropios": [
+    {"id": "tenderiser-maul", "en": "Tenderiser Maul", "cat": "melee", "manos": 2, "alcance": "Melee", "kw": ["+1 INJURY MODIFIER", "HEAVY"], "regla": "swinging-blow"}
+  ]
+}

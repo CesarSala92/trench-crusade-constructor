@@ -1,0 +1,600 @@
+{
+ "_info": "Datos comunes a todas las facciones. Identificadores y palabras clave en inglés, tal como aparecen en el libro. Los textos en castellano están en es.json.",
+ "categorias": [
+  "ranged",
+  "melee",
+  "grenade",
+  "shield",
+  "armour",
+  "equipment",
+  "natural"
+ ],
+ "palabrasClave": {
+  "DICE": "efecto",
+  "INJURY DICE": "efecto",
+  "INJURY MODIFIER": "efecto",
+  "ACTION": "etiqueta",
+  "AMMUNITION": "efecto",
+  "ARMOUR PIERCING": "efecto",
+  "ARTIFICIAL": "etiqueta",
+  "ASSAULT": "efecto",
+  "AUTOMATIC": "efecto",
+  "BLACK GRAIL": "etiqueta",
+  "BLAST": "efecto",
+  "BLESSED": "efecto",
+  "BLESSING MARKER": "etiqueta",
+  "BLOCK": "efecto",
+  "BLOOD MARKER": "etiqueta",
+  "CLEAVE": "efecto",
+  "CONSUMABLE": "efecto",
+  "COVER": "efecto",
+  "CRITICAL": "efecto",
+  "CUMBERSOME": "efecto",
+  "DANGEROUS TERRAIN": "efecto",
+  "DEADLY": "efecto",
+  "DEMONIC": "efecto",
+  "DEPLOYABLE": "etiqueta",
+  "DIFFICULT TERRAIN": "efecto",
+  "ELITE": "etiqueta",
+  "FEAR": "efecto",
+  "FIRE": "efecto",
+  "FIRETEAM": "efecto",
+  "FLAMETHROWER": "efecto",
+  "FLYING": "efecto",
+  "GAS": "efecto",
+  "GOLEM": "efecto",
+  "HEAVY": "efecto",
+  "HELD": "efecto",
+  "HERETIC": "etiqueta",
+  "IGNORE ARMOUR": "efecto",
+  "IGNORE": "efecto",
+  "IMPASSABLE TERRAIN": "efecto",
+  "IMPERVIOUS": "efecto",
+  "INFECTION MARKERS": "etiqueta",
+  "INFILTRATOR": "efecto",
+  "MINED": "efecto",
+  "LEADER": "efecto",
+  "NEW ANTIOCH": "etiqueta",
+  "NEGATE": "efecto",
+  "PILGRIM": "etiqueta",
+  "PISTOL": "efecto",
+  "RELOAD": "efecto",
+  "REGENERATE": "efecto",
+  "RISKY": "efecto",
+  "SCATTER": "efecto",
+  "SHOTGUN": "efecto",
+  "SHRAPNEL": "efecto",
+  "SKIRMISHER": "efecto",
+  "STRONG": "efecto",
+  "SULTANATE": "etiqueta",
+  "THE COURT": "etiqueta",
+  "TOUGH": "efecto",
+  "UNARMED": "etiqueta"
+ },
+ "objetos": [
+  {
+   "id": "anti-materiel-rifle",
+   "en": "Anti-Materiel Rifle",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "36\"",
+   "kw": [
+    "+1 INJURY DICE",
+    "CRITICAL",
+    "HEAVY",
+    "IGNORE ARMOUR"
+   ]
+  },
+  {
+   "id": "automatic-pistol",
+   "en": "Automatic Pistol",
+   "cat": "ranged",
+   "manos": 1,
+   "alcance": "12\"/Melee",
+   "kw": [
+    "ASSAULT",
+    "AUTOMATIC 2",
+    "PISTOL"
+   ]
+  },
+  {
+   "id": "automatic-rifle",
+   "en": "Automatic Rifle",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "24\"",
+   "kw": [
+    "ASSAULT",
+    "AUTOMATIC 2"
+   ],
+   "regla": "focused-fire"
+  },
+  {
+   "id": "automatic-shotgun",
+   "en": "Automatic Shotgun",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "12\"",
+   "kw": [
+    "+1 DICE",
+    "ASSAULT",
+    "SHOTGUN"
+   ]
+  },
+  {
+   "id": "blunderbuss",
+   "en": "Blunderbuss",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "10\"",
+   "kw": [
+    "SHRAPNEL"
+   ]
+  },
+  {
+   "id": "bolt-action-rifle",
+   "en": "Bolt-Action Rifle",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "24\"",
+   "kw": []
+  },
+  {
+   "id": "flamethrower",
+   "en": "Flamethrower",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "8\"",
+   "kw": [
+    "-1 INJURY DICE",
+    "FIRE",
+    "FLAMETHROWER",
+    "IGNORE ARMOUR"
+   ]
+  },
+  {
+   "id": "grenade-launcher",
+   "en": "Grenade Launcher",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "36\"",
+   "kw": [
+    "BLAST 3\"",
+    "HEAVY",
+    "IGNORE COVER",
+    "SHRAPNEL"
+   ]
+  },
+  {
+   "id": "heavy-flamethrower",
+   "en": "Heavy Flamethrower",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "10\"",
+   "kw": [
+    "-1 INJURY DICE",
+    "AUTOMATIC 2",
+    "FIRE",
+    "FLAMETHROWER",
+    "HEAVY",
+    "IGNORE ARMOUR"
+   ]
+  },
+  {
+   "id": "heavy-shotgun",
+   "en": "Heavy Shotgun",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "12\"",
+   "kw": [
+    "+1 DICE",
+    "+1 INJURY DICE",
+    "HEAVY",
+    "SHOTGUN"
+   ],
+   "regla": "tungsten-shot"
+  },
+  {
+   "id": "machine-gun",
+   "en": "Machine Gun",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "36\"",
+   "kw": [
+    "AUTOMATIC 3",
+    "HEAVY",
+    "RELOAD"
+   ]
+  },
+  {
+   "id": "musket",
+   "en": "Musket",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "18\"",
+   "kw": [
+    "-1 INJURY DICE"
+   ]
+  },
+  {
+   "id": "pistol",
+   "en": "Pistol",
+   "cat": "ranged",
+   "manos": 1,
+   "alcance": "12\"/Melee",
+   "kw": [
+    "PISTOL"
+   ]
+  },
+  {
+   "id": "semi-automatic-rifle",
+   "en": "Semi-Automatic Rifle",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "24\"",
+   "kw": [
+    "ASSAULT"
+   ]
+  },
+  {
+   "id": "shotgun",
+   "en": "Shotgun",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "12\"",
+   "kw": [
+    "+1 DICE",
+    "SHOTGUN"
+   ]
+  },
+  {
+   "id": "silenced-pistol",
+   "en": "Silenced Pistol",
+   "cat": "ranged",
+   "manos": 1,
+   "alcance": "12\"/Melee",
+   "kw": [
+    "ASSAULT",
+    "PISTOL"
+   ]
+  },
+  {
+   "id": "sniper-rifle",
+   "en": "Sniper Rifle",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "48\"",
+   "kw": [
+    "+1 DICE",
+    "CRITICAL",
+    "RISKY"
+   ],
+   "regla": "bulls-eye"
+  },
+  {
+   "id": "submachine-gun",
+   "en": "Submachine Gun",
+   "cat": "ranged",
+   "manos": 2,
+   "alcance": "16\"",
+   "kw": [
+    "ASSAULT"
+   ]
+  },
+  {
+   "id": "anti-tank-hammer",
+   "en": "Anti-Tank Hammer",
+   "cat": "melee",
+   "manos": 2,
+   "alcance": "Melee",
+   "kw": [
+    "+1 INJURY DICE",
+    "CRITICAL",
+    "IGNORE ARMOUR",
+    "RISKY"
+   ],
+   "regla": "dangerous"
+  },
+  {
+   "id": "bayonet",
+   "en": "Bayonet",
+   "cat": "melee",
+   "manos": 2,
+   "alcance": "Melee",
+   "kw": [
+    "CUMBERSOME"
+   ],
+   "requiereEnganche": true
+  },
+  {
+   "id": "flail-scourge",
+   "en": "Flail/Scourge",
+   "cat": "melee",
+   "manos": 1,
+   "alcance": "Melee",
+   "kw": [
+    "+1 DICE"
+   ],
+   "regla": "unwieldy"
+  },
+  {
+   "id": "great-hammer",
+   "en": "Great Hammer/Maul",
+   "cat": "melee",
+   "manos": 2,
+   "alcance": "Melee",
+   "kw": [
+    "+1 INJURY MODIFIER",
+    "HEAVY"
+   ]
+  },
+  {
+   "id": "great-sword",
+   "en": "Great Sword/Axe",
+   "cat": "melee",
+   "manos": 2,
+   "alcance": "Melee",
+   "kw": [
+    "+1 INJURY DICE",
+    "CRITICAL",
+    "HEAVY"
+   ]
+  },
+  {
+   "id": "misericordia",
+   "en": "Misericordia",
+   "cat": "melee",
+   "manos": 1,
+   "alcance": "Melee",
+   "kw": [],
+   "regla": "despatch"
+  },
+  {
+   "id": "polearm",
+   "en": "Polearm",
+   "cat": "melee",
+   "manos": 2,
+   "alcance": "Melee",
+   "kw": [
+    "BLOCK",
+    "CUMBERSOME"
+   ]
+  },
+  {
+   "id": "sword-axe",
+   "en": "Sword/Axe",
+   "cat": "melee",
+   "manos": 1,
+   "alcance": "Melee",
+   "kw": [
+    "CRITICAL"
+   ]
+  },
+  {
+   "id": "trench-club",
+   "en": "Trench Club",
+   "cat": "melee",
+   "manos": 1,
+   "alcance": "Melee",
+   "kw": []
+  },
+  {
+   "id": "trench-knife",
+   "en": "Trench Knife",
+   "cat": "melee",
+   "manos": 1,
+   "alcance": "Melee",
+   "kw": [
+    "-1 DICE"
+   ]
+  },
+  {
+   "id": "hellblade",
+   "en": "Hellblade",
+   "cat": "melee",
+   "manos": 2,
+   "alcance": "Melee",
+   "kw": [
+    "+1 INJURY DICE",
+    "FIRE"
+   ],
+   "origen": "heretic-legions"
+  },
+  {
+   "id": "frag-grenades",
+   "en": "Frag Grenades",
+   "cat": "grenade",
+   "alcance": "8\"",
+   "kw": [
+    "ASSAULT",
+    "BLAST 2\"",
+    "IGNORE COVER",
+    "IGNORE LONG RANGE",
+    "SHRAPNEL"
+   ]
+  },
+  {
+   "id": "gas-grenades",
+   "en": "Gas Grenades",
+   "cat": "grenade",
+   "alcance": "8\"",
+   "kw": [
+    "-1 INJURY DICE",
+    "ASSAULT",
+    "BLAST 3\"",
+    "GAS",
+    "IGNORE ARMOUR",
+    "IGNORE COVER",
+    "IGNORE LONG RANGE"
+   ]
+  },
+  {
+   "id": "incendiary-grenades",
+   "en": "Incendiary Grenades",
+   "cat": "grenade",
+   "alcance": "8\"",
+   "kw": [
+    "ASSAULT",
+    "FIRE",
+    "IGNORE COVER",
+    "IGNORE LONG RANGE"
+   ]
+  },
+  {
+   "id": "trench-shield",
+   "en": "Trench Shield",
+   "cat": "shield",
+   "kw": [
+    "-1 INJURY MODIFIER"
+   ]
+  },
+  {
+   "id": "reinforced-armour",
+   "en": "Reinforced Armour",
+   "cat": "armour",
+   "kw": [
+    "-2 INJURY MODIFIER"
+   ]
+  },
+  {
+   "id": "standard-armour",
+   "en": "Standard Armour",
+   "cat": "armour",
+   "kw": [
+    "-1 INJURY MODIFIER"
+   ]
+  },
+  {
+   "id": "combat-helmet",
+   "en": "Combat Helmet",
+   "cat": "equipment",
+   "kw": [
+    "NEGATE SHRAPNEL"
+   ],
+   "cabeza": true
+  },
+  {
+   "id": "field-shrine",
+   "en": "Field Shrine",
+   "cat": "equipment",
+   "kw": [
+    "DEPLOYABLE"
+   ],
+   "regla": "site-of-worship"
+  },
+  {
+   "id": "gas-mask",
+   "en": "Gas Mask",
+   "cat": "equipment",
+   "kw": [
+    "NEGATE GAS"
+   ]
+  },
+  {
+   "id": "musical-instrument",
+   "en": "Musical Instrument",
+   "cat": "equipment",
+   "kw": [
+    "HELD"
+   ],
+   "regla": "fanfare"
+  },
+  {
+   "id": "troop-flag",
+   "en": "Troop Flag",
+   "cat": "equipment",
+   "kw": [
+    "LEADER",
+    "HELD"
+   ]
+  },
+  {
+   "id": "unholy-trinket",
+   "en": "Unholy Trinket",
+   "cat": "equipment",
+   "kw": [
+    "CONSUMABLE"
+   ],
+   "regla": "talisman"
+  },
+  {
+   "id": "satchel-charge",
+   "en": "Satchel Charge",
+   "cat": "grenade",
+   "alcance": "6\"",
+   "kw": [
+    "+1 INJURY DICE",
+    "BLAST 3\"",
+    "CONSUMABLE",
+    "HEAVY",
+    "IGNORE ARMOUR",
+    "IGNORE COVER",
+    "SCATTER"
+   ]
+  },
+  {
+   "id": "binoculars",
+   "en": "Binoculars",
+   "cat": "equipment",
+   "kw": [],
+   "regla": "survey-the-land"
+  },
+  {
+   "id": "martyrdom-pills",
+   "en": "Martyrdom Pills",
+   "cat": "equipment",
+   "kw": [
+    "CONSUMABLE"
+   ],
+   "regla": "inured-to-pain"
+  },
+  {
+   "id": "medi-kit",
+   "en": "Medi-kit",
+   "cat": "equipment",
+   "kw": [],
+   "regla": "treat"
+  },
+  {
+   "id": "mountaineer-kit",
+   "en": "Mountaineer Kit",
+   "cat": "equipment",
+   "kw": [],
+   "regla": "ropes-and-pitons"
+  },
+  {
+   "id": "shovel",
+   "en": "Shovel",
+   "cat": "equipment",
+   "kw": [],
+   "regla": "dug-in"
+  },
+  {
+   "id": "armour-piercing-bullets",
+   "en": "Armour-Piercing Bullets",
+   "cat": "equipment",
+   "kw": [
+    "AMMUNITION (ARMOUR PIERCING)",
+    "CONSUMABLE"
+   ]
+  },
+  {
+   "id": "dum-dum-bullets",
+   "en": "Dum-Dum Bullets",
+   "cat": "equipment",
+   "kw": [
+    "AMMUNITION (CRITICAL)",
+    "CONSUMABLE"
+   ]
+  }
+ ],
+ "reglasLimiteEquipo": {
+  "_info": "Límites de equipo por modelo del reglamento (Battlekit Limits). El motor los aplica a todas las facciones.",
+  "distancia": "una de dos manos o dos de una mano",
+  "cuerpo": "una de dos manos o dos de una mano",
+  "granadas": 1,
+  "armaduras": 1,
+  "escudos": 1,
+  "cabeza": 1
+ }
+}

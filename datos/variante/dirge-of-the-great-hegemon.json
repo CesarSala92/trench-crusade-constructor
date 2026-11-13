@@ -1,0 +1,37 @@
+{
+  "_info": "Canto Fúnebre del Gran Hegemón. Variante del Culto del Grial Negro. Fuente: Warbands 1.0.2, pp. 141-143.",
+  "id": "dirge-of-the-great-hegemon", "base": "black-grail", "en": "Dirge of the Great Hegemon",
+  "reglas": ["the-executor", "the-fallen", "the-lost", "the-bereaved", "dishonoured", "hegemons-last-blessing", "hegemons-will"],
+  "objetosPropios": [
+    {"id": "broken-crown", "en": "Broken Crown", "cat": "equipment", "kw": [], "regla": "locus-of-despair"},
+    {"id": "urn-of-the-bitter-ashes", "en": "Urn of the Bitter Ashes", "cat": "equipment", "kw": [], "regla": "sinister-whispers"}
+  ],
+  "armeria": {
+    "menos": ["beelzebubs-axe", "black-grail-shield", "machine-gun"],
+    "cambios": {
+      "putrid-shotgun": {"lim": 3},
+      "viscera-cannon": {"lim": 3, "quitarSolo": true}
+    },
+    "mas": [
+      {"obj": "broken-crown", "d": 25, "lim": 1, "solo": ["ELITE"]},
+      {"obj": "urn-of-the-bitter-ashes", "d": 40, "lim": 1, "solo": ["ELITE"]}
+    ]
+  },
+  "unidades": {
+    "lord-of-tumours": {"quitar": true},
+    "amalgam": {"quitar": true},
+    "plague-knight": {"max": 2, "habMas": ["hegemons-will"]},
+    "hound-of-the-black-grail": {"max": 2},
+    "herald-of-beelzebub": {"max": 2},
+    "grail-thrall": {"d": 30, "alias": "bereaved", "stats": {"dis": 0},
+      "kit": {"soloCategorias": ["ranged", "grenade"], "soloObjetos": ["musical-instrument", "troop-flag"]},
+      "habMenos": ["no-battlekit"], "habMas": ["bereaved-battlekit"]}
+  },
+  "unidadesNuevas": [
+    {"id": "executor", "copiaDe": "plague-knight", "en": "Executor", "d": 80, "max": 1,
+     "kwMas": ["LEADER", "TOUGH"], "stats": {"dis": 1}}
+  ],
+  "restricciones": [
+    {"id": "dirge-leader", "tipo": "una-de", "casos": [{"executor": [1, 1], "plague-knight": [0, 2]}]}
+  ]
+}

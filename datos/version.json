@@ -1,0 +1,30 @@
+{
+ "reglamento": "Warbands of Trench Crusade 1.0.2 · Trench Crusade Digital Rulebook 1.0.2",
+ "datos": "2026-11-13",
+ "facciones": [
+  "black-grail",
+  "new-antioch"
+ ],
+ "cambios": [
+  {
+   "fecha": "2026-11-05",
+   "texto": "Datos separados del programa: glosario de palabras clave, armería común, Culto del Grial Negro y mercenarios contratables por el Grial."
+  },
+  {
+   "fecha": "2026-11-13",
+   "texto": "Añadido el Principado de Nueva Antioquía y sus cinco variantes: Estados Pontificios, Rangers de Éire, Reino de Alba, Stosstruppen de Prusia y Abisinia. Equipos de fuego, precios especiales y reglas de equipo por variante."
+  },
+  {
+   "fecha": "2026-11-13",
+   "texto": "Añadida la variante del Grial Negro: Canto Fúnebre del Gran Hegemón (Ejecutor, Dolientes, Corona rota y Urna de las cenizas amargas)."
+  }
+ ],
+ "variantes": [
+  "papal-states",
+  "eire-rangers",
+  "kingdom-of-alba",
+  "prussia-stosstruppen",
+  "abyssinia",
+  "dirge-of-the-great-hegemon"
+ ]
+}

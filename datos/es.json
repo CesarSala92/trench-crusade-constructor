@@ -1,0 +1,1187 @@
+{
+ "_info": "Textos en castellano. Las claves son los identificadores en inglés de los archivos de datos. Si falta una traducción, la página muestra el nombre inglés.",
+ "palabrasClave": {
+  "DICE": {
+   "n": "DADO",
+   "pl": "DADOS",
+   "t": "+/− DADOS",
+   "d": "Dados que se suman o restan a las tiradas de Éxito. Si está en un arma, solo afecta a los ataques hechos con ella."
+  },
+  "INJURY DICE": {
+   "n": "DADO DE HERIDA",
+   "pl": "DADOS DE HERIDA",
+   "t": "+/− DADOS DE HERIDA",
+   "d": "Dados que se suman o restan a las tiradas de Herida. Si está en un arma, solo afecta a los ataques hechos con ella."
+  },
+  "INJURY MODIFIER": {
+   "n": "MODIFICADOR DE HERIDA",
+   "t": "+/− MODIFICADOR DE HERIDA",
+   "d": "Modificador al resultado de la tirada de Herida. En un arma, solo a sus ataques; en armaduras y escudos, a las heridas que recibe quien los lleva."
+  },
+  "ACTION": {
+   "n": "ACCIÓN",
+   "d": "Etiqueta: una actividad que el modelo puede hacer al activarse, como Mover, Dash, Disparar o Luchar."
+  },
+  "AMMUNITION": {
+   "n": "MUNICIÓN",
+   "d": "El modelo la usa en su próxima partida: al desplegarlo eliges un arma a distancia, que gana la palabra clave indicada hasta el final de la partida. El arma no puede tener ya EXPLOSIÓN, FUEGO, GAS ni METRALLA, ni más de un tipo de MUNICIÓN."
+  },
+  "ARMOUR PIERCING": {
+   "n": "PERFORANTE",
+   "t": "PERFORANTE (Armour Piercing)",
+   "d": "Reduce en 1 el MODIFICADOR DE HERIDA negativo total que el objetivo obtiene de su Armadura y de sus armaduras y escudos, hasta un mínimo de 0. Ej.: armadura estándar y escudo pasan de −2 a −1."
+  },
+  "ARTIFICIAL": {
+   "n": "ARTIFICIAL",
+   "d": "Etiqueta: el modelo no es de origen biológico natural, está construido con elementos no orgánicos."
+  },
+  "ASSAULT": {
+   "n": "ASALTO",
+   "t": "ASALTO (Assault)",
+   "d": "Disparar con un arma ASALTO no impide al modelo cargar ni luchar en la misma activación."
+  },
+  "AUTOMATIC": {
+   "n": "AUTOMÁTICA",
+   "t": "AUTOMÁTICA (X)",
+   "d": "Al disparar con esta arma puedes hacer X ataques a distancia seguidos. Pueden ir a enemigos distintos si están a 6\" entre sí. Los marcadores que gastes solo modifican el ataque en el que los gastas."
+  },
+  "BLACK GRAIL": {
+   "n": "GRIAL NEGRO",
+   "d": "Etiqueta: el modelo pertenece al Culto del Grial Negro."
+  },
+  "BLAST": {
+   "n": "EXPLOSIÓN",
+   "t": "EXPLOSIÓN (X\")",
+   "d": "Radio de explosión de X\" (también en vertical). Apuntas a un enemigo o a un punto visible en alcance y línea de visión. Si fallas no pasa nada, salvo que tenga DISPERSIÓN. Con éxito quedan impactados todos los modelos dentro del radio con línea de visión al punto, y también los aliados a 1\" de un enemigo impactado. El dado extra del crítico solo se suma al objetivo elegido."
+  },
+  "BLESSED": {
+   "n": "BENDITO",
+   "t": "BENDITO (X)",
+   "d": "La primera vez que el modelo se despliega en una partida, recibe X marcadores de bendición."
+  },
+  "BLESSING MARKER": {
+   "n": "MARCADOR DE BENDICIÓN",
+   "d": "Etiqueta: el modelo está bajo una mejora sobrenatural o química con beneficios temporales."
+  },
+  "BLOCK": {
+   "n": "BLOQUEO",
+   "t": "BLOQUEO (Block)",
+   "d": "−1 DADO a los ataques cuerpo a cuerpo contra este modelo, o contra quien lleve un arma con BLOQUEO, si el atacante cargó antes en ese turno."
+  },
+  "BLOOD MARKER": {
+   "n": "MARCADOR DE SANGRE",
+   "d": "Etiqueta: se pone en los modelos que sufren una herida."
+  },
+  "CLEAVE": {
+   "n": "HENDER",
+   "t": "HENDER (X) (Cleave)",
+   "d": "Al luchar con esta arma haces X ataques cuerpo a cuerpo seguidos, que pueden ir a enemigos distintos. Los marcadores gastados solo modifican el ataque en el que se gastan."
+  },
+  "CONSUMABLE": {
+   "n": "CONSUMIBLE",
+   "d": "En campaña, este equipo se pierde al final de la partida en la que se usa."
+  },
+  "COVER": {
+   "n": "COBERTURA",
+   "t": "COBERTURA (Cover)",
+   "d": "El modelo cuenta con los modificadores de Cobertura u Obstáculo defendido."
+  },
+  "CRITICAL": {
+   "n": "CRÍTICO",
+   "t": "CRÍTICO (Critical)",
+   "d": "Con un Éxito crítico, el ataque suma +2 DADOS DE HERIDA en lugar de +1."
+  },
+  "CUMBERSOME": {
+   "n": "ENGORROSA",
+   "t": "ENGORROSA (Cumbersome)",
+   "d": "Necesita dos manos aunque el modelo sea FUERTE. Aun así, se puede usar junto a un escudo con Combinación con escudo."
+  },
+  "DANGEROUS TERRAIN": {
+   "n": "TERRENO PELIGROSO",
+   "d": "Al activarse dentro o entrar en este terreno, tirada arriesgada: si falla, tirada de Herida y fin de la activación. Si la supera, no vuelve a tirar en ese movimiento."
+  },
+  "DEADLY": {
+   "n": "LETAL",
+   "t": "LETAL (Deadly)",
+   "d": "La tirada de Herida se hace con 3D6 sumando los tres; con dados extra o en contra, eliges los 3 más altos o más bajos."
+  },
+  "DEMONIC": {
+   "n": "DEMONÍACO",
+   "t": "DEMONÍACO (Demonic)",
+   "d": "El modelo tiene ANULA FUEGO."
+  },
+  "DEPLOYABLE": {
+   "n": "DESPLEGABLE",
+   "t": "DESPLEGABLE (Deployable)",
+   "d": "Equipo representado por una miniatura o escenografía que se coloca durante la partida."
+  },
+  "DIFFICULT TERRAIN": {
+   "n": "TERRENO DIFÍCIL",
+   "d": "Cada pulgada que se mueve por este terreno cuenta como dos."
+  },
+  "ELITE": {
+   "n": "ÉLITE",
+   "d": "Los modelos más veteranos y heroicos de la banda. Ganan experiencia y tiran en la tabla de Trauma."
+  },
+  "FEAR": {
+   "n": "MIEDO",
+   "t": "MIEDO (Fear)",
+   "d": "−1 DADO a los ataques cuerpo a cuerpo contra este modelo. Quien causa MIEDO es inmune al MIEDO."
+  },
+  "FIRE": {
+   "n": "FUEGO",
+   "t": "FUEGO (Fire)",
+   "d": "Después de la tirada de Herida, pon 1 marcador de sangre extra en el objetivo aunque el resultado sea Sin efecto."
+  },
+  "FIRETEAM": {
+   "n": "EQUIPO DE FUEGO",
+   "d": "Grupo de dos modelos que pueden activarse a la vez, alternando sus acciones. Si la activación de uno termina, termina la de los dos."
+  },
+  "FLAMETHROWER": {
+   "n": "LANZALLAMAS",
+   "t": "LANZALLAMAS (Flamethrower)",
+   "d": "El ataque a distancia acierta automáticamente: no se tira Éxito, así que tampoco puede ser crítico."
+  },
+  "FLYING": {
+   "n": "VOLADOR",
+   "t": "VOLADOR (Flying)",
+   "d": "Mueve, se retira y carga midiendo por el aire, pero debe acabar en el tablero o sobre escenografía. Sigue tirando en terreno peligroso, no puede acabar en terreno infranqueable y no tira herida si cae."
+  },
+  "GAS": {
+   "n": "GAS",
+   "d": "Después de la tirada de Herida, pon 1 marcador de sangre extra en el objetivo aunque el resultado sea Sin efecto."
+  },
+  "GOLEM": {
+   "n": "GÓLEM",
+   "d": "Un Fuera de combate cuenta como Derribado salvo que venga de un Baño de sangre. Su propio bando no puede quitarle marcadores de sangre. Tiene ANULA MIEDO y ANULA GAS, pero no puede ser DURO."
+  },
+  "HEAVY": {
+   "n": "PESADA",
+   "t": "PESADA (Heavy)",
+   "d": "Un modelo no puede llevar más de una pieza de equipo PESADA y no recibe bonificador de carga. Si es arma a distancia o granada, no puede atacar con ella y moverse, cargar, retirarse o hacer Dash en la misma activación. Los modelos FUERTES la ignoran (ANULA PESADA)."
+  },
+  "HELD": {
+   "n": "EMPUÑADO",
+   "t": "EMPUÑADO (Held)",
+   "d": "Ocupa una mano y no se puede soltar: el modelo solo puede llevar un arma de una mano o un escudo, nunca armas de dos manos ni arma y escudo a la vez. Puede llevar granadas."
+  },
+  "HERETIC": {
+   "n": "HEREJE",
+   "d": "Etiqueta: el modelo pertenece a las Legiones Herejes."
+  },
+  "IGNORE ARMOUR": {
+   "n": "IGNORA ARMADURA",
+   "t": "IGNORA ARMADURA (Ignore Armour)",
+   "d": "Ignora los −DADOS DE HERIDA y −MODIFICADORES DE HERIDA de la característica de Armadura del objetivo y de sus armaduras y escudos."
+  },
+  "IGNORE": {
+   "n": "IGNORA",
+   "t": "IGNORA [MODIFICADOR]",
+   "d": "Ignora el modificador indicado en las tiradas de Éxito o de Herida. Ej.: con IGNORA COBERTURA el disparo no sufre el −1 DADO por cobertura."
+  },
+  "COVER_MOD": {
+   "n": "COBERTURA"
+  },
+  "LONG RANGE": {
+   "n": "LARGO ALCANCE"
+  },
+  "IMPASSABLE TERRAIN": {
+   "n": "TERRENO INFRANQUEABLE",
+   "d": "No se puede mover sobre él ni a través."
+  },
+  "IMPERVIOUS": {
+   "n": "IMPERMEABLE",
+   "t": "IMPERMEABLE (Impervious)",
+   "d": "PERFORANTE e IGNORA ARMADURA no afectan a los modificadores negativos de este equipo."
+  },
+  "INFECTION MARKERS": {
+   "n": "MARCADORES DE INFECCIÓN",
+   "d": "Esta arma pone marcadores de infección en lugar de sangre. Se usan igual que los de sangre (modificar tiradas, provocar Baños de sangre y combinarse con ellos), pero si el modelo tiene alguno al activarse recibe 1 más, y las reglas que quitan sangre no los quitan. Máximo 6."
+  },
+  "INFILTRATOR": {
+   "n": "INFILTRADOR",
+   "d": "La primera vez que se despliega puede ponerse en cualquier punto fuera de la línea de visión enemiga y a 8\" o más del enemigo más cercano, después de los demás modelos."
+  },
+  "MINED": {
+   "n": "MINADO",
+   "d": "Al tocarlo, la mina estalla (salvo ANULA MINADO): tirada de Herida con METRALLA. Los VOLADORES solo la activan si acaban el movimiento en contacto."
+  },
+  "LEADER": {
+   "n": "LÍDER",
+   "t": "LÍDER (Leader)",
+   "d": "+1 DADO a las tiradas de Moral si tienes en el tablero al menos un modelo LÍDER que no esté derribado ni fuera de combate."
+  },
+  "NEW ANTIOCH": {
+   "n": "NUEVA ANTIOQUÍA",
+   "d": "Etiqueta: el modelo pertenece al Principado de Nueva Antioquía."
+  },
+  "NEGATE": {
+   "n": "ANULA",
+   "t": "ANULA [PALABRA CLAVE] (Negate)",
+   "d": "El modelo no se ve afectado por el efecto de la palabra clave indicada."
+  },
+  "PILGRIM": {
+   "n": "PEREGRINO",
+   "d": "Etiqueta: el modelo pertenece a los Peregrinos de la Trinchera."
+  },
+  "PISTOL": {
+   "n": "PISTOLA",
+   "t": "PISTOLA (Pistol)",
+   "d": "Sirve como arma a distancia o cuerpo a cuerpo, incluso las dos en la misma activación. En cuerpo a cuerpo puede usar la característica de Disparo o la de Cuerpo a cuerpo, y vale como arma de mano torpe."
+  },
+  "RELOAD": {
+   "n": "RECARGA",
+   "t": "RECARGA (Reload)",
+   "d": "Tras atacar con esta arma, la activación del modelo termina al acabar esa acción."
+  },
+  "REGENERATE": {
+   "n": "REGENERA",
+   "t": "REGENERA (X)",
+   "d": "Al activar al modelo, antes de sus acciones, puedes quitarle hasta X marcadores de sangre."
+  },
+  "RISKY": {
+   "n": "ARRIESGADA",
+   "t": "ARRIESGADA (Risky)",
+   "d": "Las tiradas de Éxito al usar este equipo pasan a ser arriesgadas: si fallan, termina la acción o la activación del modelo."
+  },
+  "SCATTER": {
+   "n": "DISPERSIÓN",
+   "t": "DISPERSIÓN (Scatter)",
+   "d": "Si falla, el disparo se desvía 7 menos la tirada de Éxito en pulgadas, en la dirección que elija el rival, y luego se resuelve la explosión."
+  },
+  "SHOTGUN": {
+   "n": "ESCOPETA",
+   "t": "ESCOPETA (Shotgun)",
+   "d": "A largo alcance aplica −1 DADO DE HERIDA en lugar del −1 DADO habitual."
+  },
+  "SHRAPNEL": {
+   "n": "METRALLA",
+   "t": "METRALLA (Shrapnel)",
+   "d": "Después de la tirada de Herida, pon 1 marcador de sangre extra en el objetivo aunque el resultado sea Sin efecto."
+  },
+  "SKIRMISHER": {
+   "n": "HOSTIGADOR",
+   "t": "HOSTIGADOR (Skirmisher)",
+   "d": "Si un enemigo lo elige como objetivo de una carga y no está a 1\" de ningún enemigo, puede esquivar moviendo D3\" y acabando a más de 1\" de los enemigos. Si otro modelo queda en medio, la carga debe ir contra ese."
+  },
+  "STRONG": {
+   "n": "FUERTE",
+   "t": "FUERTE (Strong)",
+   "d": "Tiene ANULA PESADA y puede llevar y usar un arma cuerpo a cuerpo de dos manos como si fuera de una (salvo las ENGORROSAS)."
+  },
+  "SULTANATE": {
+   "n": "SULTANATO",
+   "d": "Etiqueta: el modelo pertenece al Sultanato del Muro de Hierro."
+  },
+  "THE COURT": {
+   "n": "LA CORTE",
+   "d": "Etiqueta: el modelo pertenece a la Corte de la Serpiente de Siete Cabezas."
+  },
+  "TOUGH": {
+   "n": "DURO",
+   "t": "DURO (Tough)",
+   "d": "La primera vez que sufre un resultado de Fuera de combate en la tabla de Heridas, cuenta como Derribado."
+  },
+  "UNARMED": {
+   "n": "SIN ARMA",
+   "t": "Ataque natural",
+   "d": "Este modelo puede atacar cuerpo a cuerpo aunque no tenga armas. No ocupa manos ni cuesta ducados."
+  }
+ },
+ "facciones": {
+  "black-grail": {
+   "n": "Culto del Grial Negro",
+   "reglas": {
+    "infection-markers": [
+     "Marcadores de infección",
+     "Algunas armas del Grial ponen marcadores de infección en lugar de sangre. Funcionan como los de sangre, pero aumentan en 1 cada vez que el modelo se activa y no se quitan con las reglas que quitan sangre."
+    ],
+    "black-grail-morale": [
+     "Terror del Grial",
+     "El rival suma −1 DADO a todas sus tiradas de Moral, salvo que juegue con la Corte o con el Grial Negro."
+    ]
+   }
+  },
+  "new-antioch": {
+   "n": "Principado de Nueva Antioquía",
+   "reglas": {
+    "new-antioch-fireteams": [
+     "Equipos de fuego",
+     "Hasta 2 equipos de fuego de dos modelos cualesquiera, que ganan FIRETEAM gratis. Ataque concentrado: si un miembro impacta a un objetivo que ya impactó su compañero en la misma activación conjunta, puedes gastar 3 marcadores de sangre para convertir la tirada de herida del segundo ataque en un Baño de sangre, aunque el objetivo no esté derribado."
+    ]
+   }
+  },
+  "papal-states": {
+   "n": "Fuerza de Intervención de los Estados Pontificios",
+   "base": "Nueva Antioquía",
+   "reglas": {
+    "far-from-home": [
+     "Lejos de casa",
+     "No puede incluir Topos de trinchera."
+    ],
+    "lector": [
+     "Lector",
+     "Debe incluir 1 Clérigo de trinchera, pero no está obligada a llevar Teniente. El Clérigo gana LÍDER y la acción ¡Levántate y sánate!"
+    ],
+    "specialist-force": [
+     "Fuerza especializada",
+     "Empieza con 500 ducados y 11☼. Gana 4☼ cada vez que pide refuerzos. En campaña, su Umbral se reduce en 200 ducados."
+    ],
+    "supreme-blessing": [
+     "Bendición suprema",
+     "Al crear la banda, un modelo debe llevar el Crucifijo del Sumo Pontífice, gratis. Si se pierde, el sustituto se paga normalmente."
+    ],
+    "swiss-guard": [
+     "Guardia Suiza",
+     "El Teniente y hasta 4 modelos más pueden tener ANULA MIEDO sin coste."
+    ]
+   }
+  },
+  "eire-rangers": {
+   "n": "Rangers de Éire",
+   "base": "Nueva Antioquía",
+   "reglas": {
+    "anointed-ammunition": [
+     "Munición ungida",
+     "Puede comprar Balas perforantes a 5 ducados (límite 2)."
+    ],
+    "berserker": [
+     "Berserker",
+     "El Teniente o un Fianna puede ser Berserker por +15 ducados: no puede llevar armadura (sí escudo), tiene ANULA MIEDO y nunca recibe marcadores de sangre."
+    ],
+    "carnyx": [
+     "Carnyx",
+     "Un Instrumento musical de la banda puede tener MIEDO sin coste."
+    ],
+    "fianna": [
+     "Fianna",
+     "Los Tropas de choque pueden tener INFILTRADOR y HOSTIGADOR por +10 ducados cada uno."
+    ],
+    "followers-of-saint-patrick": [
+     "Seguidores de San Patricio",
+     "Su Patrón es siempre un Santo Erudito."
+    ],
+    "hit-and-run": [
+     "Golpear y huir",
+     "−1 DADO a los ataques cuerpo a cuerpo contra un modelo de esta banda que se está retirando."
+    ],
+    "light-infantry": [
+     "Infantería ligera",
+     "Máx. 1 Infantería Pesada Mecanizada y hasta 4 Ingenieros de combate; límite de Cargas de mochila 4. Máx. 3 modelos con Mandoble, y la Infantería Pesada no puede llevarlo. Salvo el Mandoble, solo la Infantería Pesada puede llevar armas PESADAS (los Ingenieros sí, Cargas de mochila). Solo la Infantería Pesada puede llevar Armadura reforzada o de Máquina."
+    ],
+    "loose-formation": [
+     "Formación abierta",
+     "El Teniente cambia ¡Alto el fuego! por HOSTIGADOR."
+    ],
+    "strong-in-faith": [
+     "Fuertes en la fe",
+     "Hasta 2 Clérigos de trinchera, que cambian ¡Adelante, soldados de Cristo! por ¡Levántate y sánate! y ¡Atrás, serpientes!"
+    ]
+   }
+  },
+  "kingdom-of-alba": {
+   "n": "Destacamento de Asalto del Reino de Alba",
+   "base": "Nueva Antioquía",
+   "reglas": {
+    "bagpipes": [
+     "Gaitas",
+     "Un Instrumento musical puede ser una gaita sin coste: los aliados a 8\" tienen ANULA MIEDO."
+    ],
+    "brave": [
+     "Valientes",
+     "+1 DADO a las tiradas de Moral."
+    ],
+    "celtic-machine-armour": [
+     "Armadura de Máquina celta",
+     "Con Armadura de Máquina, su bonificador de carga sigue siendo D6\"."
+    ],
+    "claymore-smiths": [
+     "Forjadores de claymores",
+     "Los Mandobles cuestan 7 ducados en vez de 12."
+    ],
+    "cold-steel": [
+     "Acero frío",
+     "La primera vez que compras cada arma cuerpo a cuerpo para la banda cuesta la mitad (redondeo hacia arriba). Ej.: la primera Espada cuesta 2; las demás, 4."
+    ],
+    "dum-dum-ammunition": [
+     "Munición dum-dum",
+     "Puede comprar Balas dum-dum a 5 ducados (límite 3)."
+    ],
+    "highland-strength": [
+     "Fuerza de las Highlands",
+     "El Teniente y los Tropas de choque tienen FUERTE sin coste."
+    ],
+    "lightly-armoured": [
+     "Armadura ligera",
+     "Solo el Teniente y la Infantería Pesada Mecanizada pueden llevar Armadura reforzada o de Máquina."
+    ],
+    "melee-focused": [
+     "Combate cuerpo a cuerpo",
+     "La Infantería Pesada Mecanizada tiene Cuerpo a cuerpo +1 DADO y Disparo +0 DADOS."
+    ],
+    "rampant-charge": [
+     "Carga desatada",
+     "Sus modelos tienen IGNORA OBSTÁCULO DEFENDIDO."
+    ],
+    "strained-supply": [
+     "Suministros escasos",
+     "Escopetas automáticas, Lanzagranadas, Ametralladoras, Fusiles de francotirador y Subfusiles tienen límite 1."
+    ]
+   }
+  },
+  "prussia-stosstruppen": {
+   "n": "Stosstruppen del Estado Libre de Prusia",
+   "base": "Nueva Antioquía",
+   "reglas": {
+    "athleticism": [
+     "Atletismo",
+     "El Teniente y los Tropas de choque pueden tener Asalto rápido por +5 ducados."
+    ],
+    "expert-fireteams": [
+     "Equipos de fuego expertos",
+     "Hasta 3 equipos de fuego en lugar de 2."
+    ],
+    "feldkaplane": [
+     "Feldkaplane",
+     "Los Clérigos de trinchera pueden llevar 1 dosis de Humo sagrado."
+    ],
+    "forward-positions": [
+     "Posiciones avanzadas",
+     "Hasta 2 Tropas de choque pueden tener INFILTRADOR por +10 ducados."
+    ],
+    "lightly-armoured-prussia": [
+     "Armadura ligera",
+     "Solo el Teniente y la Infantería Pesada Mecanizada pueden llevar Armadura reforzada o de Máquina."
+    ],
+    "light-melee": [
+     "Cuerpo a cuerpo ligero",
+     "Los Tropas de choque no tienen Instrucción de asalto (siguen costando 45)."
+    ],
+    "masters-of-the-grenade": [
+     "Maestros de la granada",
+     "+4\" al alcance de todas sus granadas."
+    ],
+    "specialised-equipment": [
+     "Equipo especializado",
+     "Subfusiles límite 4; la Pistola automática ya no es solo para ÉLITE. Ametralladoras límite 1; no puede llevar Lanzagranadas ni Píldoras de martirio."
+    ],
+    "troop-selection": [
+     "Selección de tropas",
+     "Debe incluir entre 2 y 8 Tropas de choque, no puede incluir Topos de trinchera y como máximo 1 Sacerdote francotirador y 1 Infantería Pesada Mecanizada."
+    ]
+   }
+  },
+  "abyssinia": {
+   "n": "Fuerzas Expedicionarias de Abisinia",
+   "base": "Nueva Antioquía",
+   "reglas": {
+    "abyssinian-healers": [
+     "Sanadores abisinios",
+     "Hasta 2 Médicos de combate; la Misericordia tiene límite 2."
+    ],
+    "chieftain-panoply": [
+     "Panoplia de caudillo",
+     "La Infantería Pesada Mecanizada no puede llevar Armadura de Máquina."
+    ],
+    "faith-of-ethiopia": [
+     "Fe de Etiopía",
+     "No puede incluir Sacerdotes francotiradores."
+    ],
+    "holy-warriors": [
+     "Guerreros santos",
+     "Puede incluir 0-1 Clérigo de trinchera y 0-2 Guerreros santos (Clérigos con ¡Salmo bendito! y ¡Levántate y sánate!)."
+    ],
+    "short-range-marksmanship": [
+     "Puntería a corta distancia",
+     "El Teniente y los Yeomen suman +1 DADO a sus disparos a corto alcance, salvo con granadas o armas PESADAS."
+    ],
+    "vanguard-forces": [
+     "Fuerzas de vanguardia",
+     "No puede incluir Topos de trinchera; hasta 4 Yeomen pueden tener Flanqueo por +5 ducados."
+    ],
+    "warrior-nobles": [
+     "Nobles guerreros",
+     "Los Tropas de choque y los modelos ÉLITE pueden tener Chewa por +5 ducados."
+    ],
+    "weapons-of-mobile-warfare": [
+     "Armas de guerra móvil",
+     "Máximo 3 armas a distancia PESADAS en la banda (las Cargas de mochila no cuentan)."
+    ]
+   }
+  },
+  "dirge-of-the-great-hegemon": {
+   "n": "Canto Fúnebre del Gran Hegemón",
+   "base": "Culto del Grial Negro",
+   "reglas": {
+    "the-executor": [
+     "El Ejecutor",
+     "Debe incluir 1 Ejecutor: un Caballero de la Plaga con Disparo +1 DADO, LÍDER y DURO, que cuesta 80 ducados. Puede incluir además 0-2 Caballeros de la Plaga."
+    ],
+    "the-fallen": [
+     "Los caídos",
+     "No puede incluir Señor de los Tumores ni Amalgama."
+    ],
+    "the-lost": [
+     "Los perdidos",
+     "Máximo 2 Sabuesos del Grial Negro y 2 Heraldos de Belcebú."
+    ],
+    "the-bereaved": [
+     "Los dolientes",
+     "Los Siervos del Grial y Siervos Mosca se llaman Dolientes: Disparo +0 DADOS, cuestan 30 ducados y pueden llevar armas a distancia, granadas, Instrumento musical o Estandarte de la armería del Grial."
+    ],
+    "dishonoured": [
+     "Deshonrados",
+     "No pueden llevar Hacha de Belcebú ni Escudo del Grial Negro."
+    ],
+    "hegemons-last-blessing": [
+     "Última bendición del Hegemón",
+     "Escopetas Pútridas límite 3; Cañones de Vísceras límite 3 y ya no son solo para ÉLITE."
+    ],
+    "hegemons-will": [
+     "Voluntad del Hegemón",
+     "El Ejecutor y los Caballeros de la Plaga pueden dar órdenes a los Dolientes (acción Mandar a los dolientes)."
+    ]
+   }
+  }
+ },
+ "objetos": {
+  "anti-materiel-rifle": {
+   "n": "Fusil antimaterial"
+  },
+  "automatic-pistol": {
+   "n": "Pistola automática"
+  },
+  "automatic-rifle": {
+   "n": "Fusil automático"
+  },
+  "automatic-shotgun": {
+   "n": "Escopeta automática"
+  },
+  "blunderbuss": {
+   "n": "Trabuco"
+  },
+  "bolt-action-rifle": {
+   "n": "Fusil de cerrojo"
+  },
+  "flamethrower": {
+   "n": "Lanzallamas"
+  },
+  "grenade-launcher": {
+   "n": "Lanzagranadas"
+  },
+  "heavy-flamethrower": {
+   "n": "Lanzallamas pesado"
+  },
+  "heavy-shotgun": {
+   "n": "Escopeta pesada"
+  },
+  "machine-gun": {
+   "n": "Ametralladora"
+  },
+  "musket": {
+   "n": "Mosquete"
+  },
+  "pistol": {
+   "n": "Pistola"
+  },
+  "semi-automatic-rifle": {
+   "n": "Fusil semiautomático"
+  },
+  "shotgun": {
+   "n": "Escopeta"
+  },
+  "silenced-pistol": {
+   "n": "Pistola silenciada"
+  },
+  "sniper-rifle": {
+   "n": "Fusil de francotirador"
+  },
+  "submachine-gun": {
+   "n": "Subfusil"
+  },
+  "anti-tank-hammer": {
+   "n": "Martillo antitanque"
+  },
+  "bayonet": {
+   "n": "Bayoneta"
+  },
+  "flail-scourge": {
+   "n": "Mayal / Flagelo"
+  },
+  "great-hammer": {
+   "n": "Gran martillo / Mazo"
+  },
+  "great-sword": {
+   "n": "Mandoble / Gran hacha"
+  },
+  "misericordia": {
+   "n": "Misericordia"
+  },
+  "polearm": {
+   "n": "Arma de asta"
+  },
+  "sword-axe": {
+   "n": "Espada / Hacha"
+  },
+  "trench-club": {
+   "n": "Porra de trinchera"
+  },
+  "trench-knife": {
+   "n": "Cuchillo de trinchera"
+  },
+  "hellblade": {
+   "n": "Hoja infernal"
+  },
+  "frag-grenades": {
+   "n": "Granadas de fragmentación"
+  },
+  "gas-grenades": {
+   "n": "Granadas de gas"
+  },
+  "incendiary-grenades": {
+   "n": "Granadas incendiarias"
+  },
+  "trench-shield": {
+   "n": "Escudo de trinchera"
+  },
+  "reinforced-armour": {
+   "n": "Armadura reforzada"
+  },
+  "standard-armour": {
+   "n": "Armadura estándar"
+  },
+  "combat-helmet": {
+   "n": "Casco de combate"
+  },
+  "field-shrine": {
+   "n": "Santuario de campaña"
+  },
+  "gas-mask": {
+   "n": "Máscara de gas"
+  },
+  "musical-instrument": {
+   "n": "Instrumento musical"
+  },
+  "troop-flag": {
+   "n": "Estandarte"
+  },
+  "unholy-trinket": {
+   "n": "Baratija impía"
+  },
+  "corruption-belcher": {
+   "n": "Eructador de Corrupción"
+  },
+  "infested-rifle": {
+   "n": "Fusil Infestado"
+  },
+  "putrid-shotgun": {
+   "n": "Escopeta Pútrida"
+  },
+  "viscera-cannon": {
+   "n": "Cañón de Vísceras"
+  },
+  "beelzebubs-axe": {
+   "n": "Hacha de Belcebú"
+  },
+  "plague-blade": {
+   "n": "Hoja de la Plaga"
+  },
+  "parasite-grenades": {
+   "n": "Granadas Parásitas"
+  },
+  "black-grail-shield": {
+   "n": "Escudo del Grial Negro"
+  },
+  "compound-eyes-helmet": {
+   "n": "Casco de Ojos Compuestos"
+  },
+  "grail-devotee": {
+   "n": "Devoto del Grial"
+  },
+  "crushing-blows": {
+   "n": "Golpes aplastantes"
+  },
+  "overwhelming-horde": {
+   "n": "Horda abrumadora"
+  },
+  "teeth-and-claws": {
+   "n": "Dientes y garras"
+  },
+  "infected-proboscis": {
+   "n": "Probóscide infectada"
+  },
+  "trample": {
+   "n": "Pisotear (acción)"
+  },
+  "tenderiser-maul": {
+   "n": "Mazo Ablandador"
+  },
+  "satchel-charge": {
+   "n": "Carga de mochila"
+  },
+  "binoculars": {
+   "n": "Prismáticos"
+  },
+  "martyrdom-pills": {
+   "n": "Píldoras de martirio"
+  },
+  "medi-kit": {
+   "n": "Botiquín"
+  },
+  "mountaineer-kit": {
+   "n": "Equipo de montañero"
+  },
+  "shovel": {
+   "n": "Pala"
+  },
+  "armour-piercing-bullets": {
+   "n": "Balas perforantes"
+  },
+  "dum-dum-bullets": {
+   "n": "Balas dum-dum"
+  },
+  "engineer-body-armour": {
+   "n": "Armadura de ingeniero"
+  },
+  "heavy-ballistic-shield": {
+   "n": "Escudo balístico pesado"
+  },
+  "machine-armour": {
+   "n": "Armadura de Máquina"
+  },
+  "supreme-pontiffs-crucifix": {
+   "n": "Crucifijo del Sumo Pontífice"
+  },
+  "lochaber-axe": {
+   "n": "Hacha de Lochaber"
+  },
+  "tank-splitter-sword": {
+   "n": "Espada rompetanques"
+  },
+  "holy-smoke": {
+   "n": "Humo sagrado"
+  },
+  "shotel": {
+   "n": "Shotel"
+  },
+  "holy-water-of-lalibela": {
+   "n": "Agua bendita de Lalibela"
+  },
+  "anfarro": {
+   "n": "Anfarro (corona del guerrero)"
+  },
+  "tabot": {
+   "n": "Tabot"
+  },
+  "broken-crown": {
+   "n": "Corona rota"
+  },
+  "urn-of-the-bitter-ashes": {
+   "n": "Urna de las cenizas amargas"
+  }
+ },
+ "reglasObjeto": {
+  "focused-fire": "Fuego concentrado: si hace 2 ataques, ambos deben ir al mismo enemigo.",
+  "tungsten-shot": "Munición de aleación: +1 DADO DE HERIDA a corto alcance.",
+  "bulls-eye": "Blanco perfecto: regla especial de puntería del francotirador (ver reglamento).",
+  "dangerous": "Peligroso: pon 1 marcador de sangre en quien lo usa si su ataque cuerpo a cuerpo tiene éxito.",
+  "unwieldy": "Difícil de manejar: el +1 DADO no se aplica cuando se usa como arma de mano torpe.",
+  "despatch": "Rematar: tiene IGNORA ARMADURA si el objetivo está derribado.",
+  "site-of-worship": "Lugar de culto: se despliega en tu zona; en la fase de Moral suma 3 modelos en pie (máx. +9). El enemigo puede atacarlo y destruirlo.",
+  "fanfare": "Fanfarria: +1 DADO a las tiradas arriesgadas de Dash de los aliados a 4\".",
+  "talisman": "Talismán: una vez por partida, si falla una tirada arriesgada, su activación no termina.",
+  "self-sacrifice": "Autosacrificio: si impacta, tras la tirada de herida puedes poner hasta 3 marcadores de sangre en el tirador (máx. 6) y 1 de infección en el objetivo por cada uno.",
+  "terrifying-hallucinations": "Alucinaciones aterradoras: si impacta, tras la tirada de herida puedes mover al objetivo 3\" en línea recta en cualquier dirección.",
+  "power-of-the-cult": "Poder del Culto: al ser objetivo de un disparo, tira Éxito; con éxito el disparo sufre −2 DADOS y con crítico falla automáticamente.",
+  "enhanced-vision": "Visión mejorada: +1 DADO a las tiradas de Éxito de sus disparos.",
+  "grovelling-followers": "Seguidores rastreros: hasta 2 modelos pueden llevar hasta 2 devotos cada uno; +1 MODIFICADOR DE HERIDA en cuerpo a cuerpo por devoto. El segundo devoto de un modelo cuesta 2☼.",
+  "swinging-blow": "Golpe en barrido: al luchar, puede hacer 1 ataque contra cada enemigo a 1\".",
+  "survey-the-land": "Reconocer el terreno: los enemigos no pueden usar INFILTRADOR para desplegar a 16\" de este modelo, salvo en su propia zona de despliegue.",
+  "inured-to-pain": "Insensible al dolor: al desplegar puede tomarlas; hasta el final de la partida tiene ANULA MIEDO y −1 DADO DE HERIDA a los ataques que le impacten.",
+  "treat": "Tratar (acción): tirada arriesgada; con éxito quita 1 marcador de sangre a sí mismo o a un aliado a 1\", o levanta a un aliado derribado a 1\".",
+  "ropes-and-pitons": "Cuerdas y clavijas: +1 DADO a las tiradas arriesgadas para escalar superficies verticales.",
+  "dug-in": "Atrincherado: si empieza la partida en terreno abierto tiene COBERTURA hasta que se mueva. Puede usar la pala como arma cuerpo a cuerpo de dos manos.",
+  "ballistic-box-armour": "Blindaje balístico: −1 DADO DE HERIDA a las tiradas de herida de ataques con METRALLA contra él, aunque el arma tenga IGNORA ARMADURA.",
+  "bulky-standfast": "Voluminosa: la peana pasa a 40 mm, no puede llevar Escudo de trinchera y su bonificador de carga es D3\". Firme: un resultado de Derribado cuenta como Impacto leve.",
+  "inspiring-relic": "Reliquia inspiradora: su portador no termina la activación al fallar una tirada arriesgada.",
+  "melt-armour": "Derretir armadura: contra objetivos con Armadura −1 o mejor, o que lleven armadura o escudo, pon un dado en 6 antes de tirar. No le afecta la habilidad de Patrón Matadragones.",
+  "chemical-incense": "Incienso químico: al desplegar puede consumirlo; hasta el final de la partida tiene ANULA MIEDO y −1 DADO DE HERIDA a los ataques que le impacten.",
+  "bypass-shield": "Rodear el escudo: ignora los −DADOS DE HERIDA y −MODIFICADORES DE HERIDA de los escudos contra sus ataques cuerpo a cuerpo.",
+  "healing-waters": "Aguas sanadoras: +1 DADO a las tiradas de acciones que quitan marcadores de sangre o infección.",
+  "token-of-honour": "Prenda de honor: +1 DADO a su característica de Cuerpo a cuerpo.",
+  "virtuous-rewards": "Recompensa virtuosa: pon 1 marcador de bendición en su portador cada vez que una acción aliada quite marcadores de sangre o infección a modelos aliados.",
+  "locus-of-despair": "Foco de desesperación: cada vez que se activa, antes de hacer acciones, pon 1 marcador de infección en cada enemigo a 1\".",
+  "sinister-whispers": "Susurros siniestros: −1 DADO a los disparos contra su portador o contra modelos a 3\" de él."
+ },
+ "unidades": {
+  "lord-of-tumours": {
+   "n": "Señor de los Tumores"
+  },
+  "plague-knight": {
+   "n": "Caballero de la Plaga"
+  },
+  "corpse-guard": {
+   "n": "Guardia Cadáver"
+  },
+  "grail-thrall": {
+   "n": "Siervo del Grial / Siervo Mosca"
+  },
+  "grail-thrall/grail-thrall": {
+   "n": "Siervo del Grial"
+  },
+  "grail-thrall/fly-thrall": {
+   "n": "Siervo Mosca"
+  },
+  "hound-of-the-black-grail": {
+   "n": "Sabueso del Grial Negro"
+  },
+  "herald-of-beelzebub": {
+   "n": "Heraldo de Belcebú"
+  },
+  "amalgam": {
+   "n": "Amalgama"
+  },
+  "sin-eater": {
+   "n": "Devorapecados"
+  },
+  "scripture-guardian": {
+   "n": "Guardián de las Escrituras"
+  },
+  "lieutenant": {
+   "n": "Teniente"
+  },
+  "sniper-priest": {
+   "n": "Sacerdote francotirador"
+  },
+  "trench-cleric": {
+   "n": "Clérigo de trinchera"
+  },
+  "yeoman": {
+   "n": "Yeoman"
+  },
+  "yeoman/trench-mole": {
+   "n": "Topo de trinchera"
+  },
+  "shock-trooper": {
+   "n": "Tropa de choque"
+  },
+  "combat-engineer": {
+   "n": "Ingeniero de combate"
+  },
+  "mechanized-heavy-infantry": {
+   "n": "Infantería Pesada Mecanizada"
+  },
+  "mechanized-heavy-infantry/reinforced": {
+   "n": "Infantería Pesada (Armadura reforzada)"
+  },
+  "mechanized-heavy-infantry/machine": {
+   "n": "Infantería Pesada (Armadura de Máquina)"
+  },
+  "combat-medic": {
+   "n": "Médico de combate"
+  },
+  "holy-warrior": {
+   "n": "Guerrero santo"
+  },
+  "executor": {
+   "n": "Ejecutor"
+  },
+  "bereaved": {
+   "n": "Doliente"
+  },
+  "bereaved/grail-thrall": {
+   "n": "Doliente (Siervo del Grial)"
+  },
+  "bereaved/fly-thrall": {
+   "n": "Doliente (Siervo Mosca)"
+  }
+ },
+ "habilidades": {
+  "beelzebubs-touch": [
+   "Toque de Belcebú",
+   "Si su ataque cuerpo a cuerpo pone marcadores de sangre o infección, añade 1 marcador de infección extra al objetivo."
+  ],
+  "crushing-blows": [
+   "Golpes aplastantes",
+   "Puede hacer un ataque cuerpo a cuerpo con HENDER 2 sin arma, o en lugar de usar sus armas."
+  ],
+  "undead-fortitude": [
+   "Fortaleza de no muerto",
+   "−1 DADO DE HERIDA a las tiradas de herida contra él, salvo ataques con FUEGO."
+  ],
+  "undead-fortitude-thrall": [
+   "Fortaleza de no muerto",
+   "−1 DADO DE HERIDA contra él, salvo FUEGO (solo el Siervo del Grial)."
+  ],
+  "plague-knight-ranks": [
+   "Rangos de caballero",
+   "Puede tener uno de los rangos de Caballero de la Plaga."
+  ],
+  "must-have-armour": [
+   "Armadura obligatoria",
+   "Debe llevar una armadura."
+  ],
+  "bodyguard": [
+   "Guardaespaldas",
+   "Si un aliado GRIAL NEGRO a 1\" recibe un impacto, puede recibirlo él en su lugar (no contra EXPLOSIÓN)."
+  ],
+  "parasite-host": [
+   "Huésped parásito",
+   "Si su ataque cuerpo a cuerpo pone marcadores en el objetivo, puede quitarse 1 marcador de sangre o infección."
+  ],
+  "overwhelming-horde": [
+   "Horda abrumadora",
+   "Ataca cuerpo a cuerpo sin arma, con +1 DADO por cada otro aliado a 3\"."
+  ],
+  "no-battlekit": [
+   "Sin equipo",
+   "No puede llevar Battlekit."
+  ],
+  "disease-carrier": [
+   "Portador de enfermedad",
+   "Un enemigo que se activa a 1\" de él recibe 1 marcador de infección."
+  ],
+  "frightening-speed": [
+   "Velocidad aterradora",
+   "+1 DADO al Dash y no divide su movimiento al levantarse."
+  ],
+  "teeth-and-claws": [
+   "Dientes y garras",
+   "Ataca cuerpo a cuerpo sin arma."
+  ],
+  "infected-proboscis": [
+   "Probóscide infectada",
+   "Ataca cuerpo a cuerpo sin arma con MARCADORES DE INFECCIÓN; si infecta, se quita 1 marcador de sangre."
+  ],
+  "herald-battlekit": [
+   "Equipo limitado",
+   "Solo armas a distancia de la armería y Casco de Ojos Compuestos."
+  ],
+  "six-armed-monstrosity": [
+   "Monstruo de seis brazos",
+   "Hasta 6 armas: dos de dos manos PESADAS cuentan como una; el resto de dos manos cuentan doble. Máx. 2 iguales, sin granadas; 1 Escudo de trinchera en lugar de un arma. Dispara y lucha una vez con cada arma, sin penalización de mano torpe."
+  ],
+  "corpulent": [
+   "Corpulento",
+   "−2 DADOS DE HERIDA a los ataques contra ella."
+  ],
+  "trample": [
+   "Pisotear (acción)",
+   "Ataque cuerpo a cuerpo con IGNORA ARMADURA contra un enemigo derribado."
+  ],
+  "unstoppable": [
+   "Imparable",
+   "Los enemigos de peana de 32 mm o menos no le atacan al retirarse; puede moverse o cargar estando trabada con ellos."
+  ],
+  "devour-the-guilty": [
+   "Devorar al culpable (acción)",
+   "Engulle a un modelo de peana de 40 mm o menos a 1\" (enemigo: tirada arriesgada; aliado: Éxito con +1 DADO). El devorado recibe 1 marcador de sangre por activación y cae con 6."
+  ],
+  "mercenary": [
+   "Mercenario",
+   "Equipo fijo que no se pierde; no recibe las reglas especiales de la facción."
+  ],
+  "slow": [
+   "Lento",
+   "Mueve 3\" al hacer Dash."
+  ],
+  "vengeful-scripture": [
+   "Escritura vengativa (acción)",
+   "Elige un enemigo a 18\" en línea de visión y tira Éxito (+2 DADOS a 9\", +1 si no): con éxito, tirada de herida con +1 MODIFICADOR por cada marcador de sangre suyo; con crítico, además IGNORA ARMADURA y +1 DADO DE HERIDA."
+  ],
+  "mandatory-melee": [
+   "Armas obligatorias",
+   "Debe comprar dos armas cuerpo a cuerpo de una mano o una de dos manos de tu armería, a su coste."
+  ],
+  "hold-your-fire": [
+   "¡Alto el fuego! (acción)",
+   "Elige un enemigo en su línea de visión que el rival pueda activar: la activación del Teniente termina y el rival debe activar ese modelo."
+  ],
+  "absolute-faith": [
+   "Fe absoluta",
+   "El rival no puede gastar marcadores de sangre para añadir −DADOS a sus disparos."
+  ],
+  "aim": [
+   "Apuntar (acción)",
+   "Tirada arriesgada con +2 DADOS; con éxito, +2 DADOS a sus disparos durante el resto de la activación."
+  ],
+  "god-is-with-us": [
+   "¡Dios está con nosotros! (acción)",
+   "Tirada arriesgada; con éxito pon 1 marcador de bendición en él o en un aliado a 6\"."
+  ],
+  "onward-christian-soldiers": [
+   "¡Adelante, soldados de Cristo!",
+   "Los aliados NUEVA ANTIOQUÍA a 8\" tienen ANULA MIEDO."
+  ],
+  "arise-and-be-healed": [
+   "¡Levántate y sánate! (acción)",
+   "Tirada arriesgada; con éxito él o un aliado a 3\" se levanta sin gastar movimiento y se quita hasta D3 marcadores de sangre o infección."
+  ],
+  "away-serpents": [
+   "¡Atrás, serpientes! (acción)",
+   "Elige un enemigo a 12\" y haz una tirada arriesgada (−1 DADO si su peana es de 40 mm o más); con éxito, queda derribado."
+  ],
+  "blessed-psalm": [
+   "¡Salmo bendito! (acción)",
+   "Pasa 1 marcador de bendición suyo a un aliado, sin tirada."
+  ],
+  "yeoman-rifle": [
+   "Fusil de dotación",
+   "Puede llevar un Fusil de cerrojo por solo 5 ducados."
+  ],
+  "trench-moles": [
+   "Topos de trinchera",
+   "Hasta 2 Yeomen pueden ser Topos con INFILTRADOR por +10 ducados; un 3.º si el resto de la banda suma 1.000 ducados o más."
+  ],
+  "assault-drill": [
+   "Instrucción de asalto",
+   "Ignora el efecto de PESADA en una de sus armas cuerpo a cuerpo (pero sigue sin poder llevar más de un arma PESADA)."
+  ],
+  "shock-charge": [
+   "Carga de choque",
+   "Al tirar su bonificador de carga, tira 1D6 más y quédate con el más alto."
+  ],
+  "fixed-kit": [
+   "Equipo fijo",
+   "Su equipo incluido no se puede quitar ni perder, y no puede comprar armadura. El modificador de la armadura ya está en su perfil."
+  ],
+  "fixed-armour": [
+   "Armadura fija",
+   "Lleva Armadura reforzada (85 ducados) o de Máquina (95). No se puede quitar ni perder, no puede comprar otra armadura y su modificador ya está en el perfil."
+  ],
+  "battlefield-demolition": [
+   "Demolición",
+   "Ignora el efecto de PESADA en una Carga de mochila (pero sigue sin poder llevar más de un arma PESADA)."
+  ],
+  "set-mine": [
+   "Colocar mina (acción)",
+   "En contacto con una pieza de escenografía de hasta 8×8\" sin MINADO: tirada con +2 DADOS; con éxito la pieza gana MINADO."
+  ],
+  "defuse-mine": [
+   "Desactivar mina",
+   "Al tocar algo MINADO puede intentar desactivarlo con una tirada arriesgada; si falla, explota y termina su activación. Las minas que puso él las desactiva sin tirar."
+  ],
+  "fortify": [
+   "Fortificar (acción)",
+   "Tirada arriesgada; con éxito tiene COBERTURA hasta que se mueva."
+  ],
+  "expert-medic": [
+   "Médico experto",
+   "+2 DADOS a la tirada arriesgada de la acción Tratar con su Botiquín."
+  ],
+  "finish-the-fallen": [
+   "Rematar a los caídos",
+   "+1 DADO DE HERIDA cuerpo a cuerpo contra objetivos derribados que no sean GRIAL NEGRO ni DEMONÍACO."
+  ],
+  "loose-formation": [
+   "Formación abierta",
+   "Tiene HOSTIGADOR en lugar de ¡Alto el fuego!"
+  ],
+  "short-range-marksmanship": [
+   "Puntería a corta distancia",
+   "+1 DADO a sus disparos a corto alcance, salvo con granadas o armas PESADAS."
+  ],
+  "bereaved-battlekit": [
+   "Equipo de doliente",
+   "Puede llevar armas a distancia, granadas, Instrumento musical o Estandarte de la armería del Grial."
+  ],
+  "hegemons-will": [
+   "Mandar a los dolientes (acción)",
+   "Quita cualquier número de marcadores de infección de modelos enemigos; por cada uno, da una orden a un Doliente a 18\": cargar, luchar, mover (sin cargar ni retirarse) o disparar. Cada Doliente recibe como máximo 1 orden por turno y sigue pudiendo activarse."
+  ]
+ },
+ "opciones": {
+  "plague-knight-rank": {
+   "n": "Rango de caballero",
+   "ninguno": "Sin rango"
+  },
+  "plague-almoner": {
+   "n": "Limosnero de la Plaga",
+   "d": "Al convertir una tirada de herida en Baño de Sangre, cuesta 1 marcador menos."
+  },
+  "knight-companion-of-the-fly": {
+   "n": "Caballero Compañero de la Mosca",
+   "d": "+1 DADO a su característica de Disparo o de Cuerpo a cuerpo (elige)."
+  },
+  "knight-of-the-rotten-cross": {
+   "n": "Caballero de la Cruz Podrida",
+   "d": "Puede comprar 1 arma a distancia o cuerpo a cuerpo de las armerías de Nueva Antioquía o Legiones Herejes. No se puede vender ni reasignar."
+  },
+  "infested-carcasses": {
+   "n": "Cadáveres infestados",
+   "d": "Sus ataques cuerpo a cuerpo ponen MARCADORES DE INFECCIÓN."
+  },
+  "maddening-buzzing": {
+   "n": "Zumbido enloquecedor",
+   "d": "Las tiradas de Éxito de los enemigos a 8\" pasan a ser arriesgadas. Solo un Heraldo de la banda."
+  },
+  "trench-mole": {
+   "n": "Topo de trinchera",
+   "d": "Gana INFILTRADOR. Máximo 2 en la banda (3 si el resto de la banda suma 1.000 ducados o más)."
+  },
+  "swiss-guard": {
+   "n": "Guardia Suiza",
+   "d": "Gana ANULA MIEDO sin coste. Hasta 4 modelos además del Teniente."
+  },
+  "berserker": {
+   "n": "Berserker",
+   "d": "ANULA MIEDO y nunca recibe marcadores de sangre, pero no puede llevar armadura (sí escudo). Solo uno: el Teniente o un Fianna."
+  },
+  "fianna": {
+   "n": "Fianna",
+   "d": "Gana INFILTRADOR y HOSTIGADOR."
+  },
+  "rapid-assault": {
+   "n": "Asalto rápido",
+   "d": "+1 DADO a la tirada arriesgada de la acción Dash."
+  },
+  "forward-positions": {
+   "n": "Posiciones avanzadas",
+   "d": "Gana INFILTRADOR. Máximo 2 en la banda."
+  },
+  "flanking": {
+   "n": "Flanqueo",
+   "d": "Puede desplegar en contacto con cualquier borde del tablero a 8\" o más de los enemigos, antes que los INFILTRADORES. Máximo 4 Yeomen."
+  },
+  "chewa": {
+   "n": "Chewa",
+   "d": "+1 DADO a sus ataques cuerpo a cuerpo por cada otro aliado a 1\" del objetivo (máx. +2)."
+  }
+ },
+ "interfaz": {
+  "categorias": {
+   "ranged": "Armas a distancia",
+   "melee": "Armas cuerpo a cuerpo",
+   "grenade": "Granadas",
+   "shield": "Escudos",
+   "armour": "Armaduras",
+   "equipment": "Equipo",
+   "natural": "Ataques naturales"
+  },
+  "tipos": {
+   "ranged": "Distancia",
+   "melee": "Cuerpo a cuerpo",
+   "grenade": "Granada",
+   "shield": "Escudo",
+   "armour": "Armadura",
+   "equipment": "Equipo",
+   "natural": "Ataque natural"
+  },
+  "movimiento": {
+   "Infantry": "Infantería",
+   "Flying": "Volador"
+  },
+  "stats": {
+   "dis": "Disparo",
+   "cac": "Cuerpo a cuerpo"
+  },
+  "origen": {
+   "new-antioch": "N. Antioquía",
+   "heretic-legions": "Herejes"
+  },
+  "equipoFuego": {
+   "n": "Equipo de fuego",
+   "ninguno": "Ninguno"
+  }
+ }
+}

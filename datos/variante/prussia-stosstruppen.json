@@ -1,0 +1,34 @@
+{
+  "_info": "Stosstruppen del Estado Libre de Prusia. Variante de Nueva Antioquía. Fuente: Warbands 1.0.2, pp. 41-42.",
+  "id": "prussia-stosstruppen", "base": "new-antioch", "en": "Stosstruppen of the Free State of Prussia",
+  "reglas": ["athleticism", "expert-fireteams", "feldkaplane", "forward-positions", "lightly-armoured-prussia", "light-melee", "masters-of-the-grenade", "specialised-equipment", "troop-selection"],
+  "equiposDeFuego": {"max": 3, "miembros": 2},
+  "objetosPropios": [
+    {"id": "tank-splitter-sword", "en": "Tank-Splitter Sword", "cat": "melee", "manos": 2, "alcance": "Melee", "kw": ["+1 INJURY DICE", "CRITICAL", "CUMBERSOME"], "regla": "melt-armour"},
+    {"id": "holy-smoke", "en": "Holy Smoke", "cat": "equipment", "kw": ["CONSUMABLE"], "regla": "chemical-incense"}
+  ],
+  "armeria": {
+    "mas": [
+      {"obj": "tank-splitter-sword", "d": 15, "lim": 2},
+      {"obj": "holy-smoke", "d": 15, "solo": ["unit:trench-cleric"], "estip": ["CONSUMABLE"]}
+    ],
+    "cambios": {"submachine-gun": {"lim": 4}, "automatic-pistol": {"quitarSolo": true}, "machine-gun": {"lim": 1}},
+    "menos": ["grenade-launcher", "martyrdom-pills"]
+  },
+  "unidades": {
+    "lieutenant": {"opcMas": [{"id": "rapid-assault", "tipo": "check", "d": 5}]},
+    "shock-trooper": {"max": 8, "habMenos": ["assault-drill"], "opcMas": [
+      {"id": "rapid-assault", "tipo": "check", "d": 5},
+      {"id": "forward-positions", "tipo": "check", "d": 10, "maxBanda": 2, "efecto": {"kw": ["INFILTRATOR"]}}
+    ]},
+    "yeoman": {"opcMenos": ["trench-mole"], "habMenos": ["trench-moles"]},
+    "sniper-priest": {"max": 1},
+    "mechanized-heavy-infantry": {"max": 1}
+  },
+  "restriccionesMas": [
+    {"id": "prussia-shock-troopers", "tipo": "una-de", "casos": [{"shock-trooper": [2, 8]}]}
+  ],
+  "reglasEquipo": [
+    {"tipo": "solo-unidades", "objs": ["reinforced-armour", "machine-armour"], "unidades": ["lieutenant", "mechanized-heavy-infantry"]}
+  ]
+}

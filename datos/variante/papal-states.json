@@ -1,0 +1,24 @@
+{
+  "_info": "Fuerza de Intervención de los Estados Pontificios. Variante de Nueva Antioquía. Fuente: Warbands 1.0.2, pp. 35-36.",
+  "id": "papal-states", "base": "new-antioch", "en": "Papal States Intervention Force",
+  "presupuesto": 500, "gloria": 11,
+  "reglas": ["far-from-home", "lector", "specialist-force", "supreme-blessing", "swiss-guard"],
+  "objetosPropios": [
+    {"id": "supreme-pontiffs-crucifix", "en": "Supreme Pontiff's Crucifix", "cat": "equipment", "kw": [], "regla": "inspiring-relic"}
+  ],
+  "armeria": {
+    "mas": [{"obj": "supreme-pontiffs-crucifix", "g": 3, "lim": 1, "especial": "gratis-primero"}]
+  },
+  "unidades": {
+    "lieutenant": {"kwMas": ["NEGATE FEAR"]},
+    "trench-cleric": {"kwMas": ["LEADER"], "habMas": ["arise-and-be-healed"]},
+    "yeoman": {"opcMenos": ["trench-mole"], "habMenos": ["trench-moles"]}
+  },
+  "opcionesTodas": {"excepto": ["lieutenant"], "opciones": [
+    {"id": "swiss-guard", "tipo": "check", "d": 0, "maxBanda": 4, "efecto": {"kw": ["NEGATE FEAR"]}}
+  ]},
+  "restricciones": [
+    {"id": "papal-leader", "tipo": "una-de", "casos": [{"trench-cleric": [1, 1], "lieutenant": [0, 1]}]},
+    {"id": "supreme-blessing", "tipo": "requiere-objeto", "obj": "supreme-pontiffs-crucifix", "min": 1}
+  ]
+}
